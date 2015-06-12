@@ -1,0 +1,19 @@
+28/11/2014 19:45
+
+Task: Get FileSystemEntry, and File / Directory artefact plugins working
+	i.e. Serializing across servicestack, persisting/retrieving from mongo
+
+Start: 2132
+Finish: 2302
+Done:
+ 	Basic Artefact w/ Disk aspect (also uses Host) can be serialized from client-server, and persisted into mongo.
+ 	
+ 	
+Start:	
+Finish: 
+Goal:
+	
+Done:
+
+Current State (0215 20/11/2014)
+- 

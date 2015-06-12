@@ -1,0 +1,66 @@
+
+DEBUG: 31318: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] added to cache @ Service/DataStore.cs:138
+DEBUG: 31318: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Aspect] added to cache @ Service/DataStore.cs:138
+DEBUG: 31318: Artefacts.Client1: DataStoreProxy..ctor: 
+[Artefacts.DataStoreProxy]
+      _client: 
+   [ServiceStack.JsvServiceClient]
+         Format: jsv
+         ContentType: application/jsv
+         StreamDeserializer: ServiceStack.Web.StreamDeserializerDelegate ... @ Service/DataStoreProxy.cs:56
+DEBUG: 31318: Artefacts.Client1: FileSystemAgent..ctor: Artefacts.FileSystem.FileSystemAgent @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:73
+INFO: 31318: Artefacts.Client1: MainClass.Main: ----- Start Test: TestArtefacts @ Client1/Program.cs:126
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: expression: Artefacts.Count() @ Service/Repository.cs:190
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: Visited(e): Artefacts.Count() @ Service/Repository.cs:195
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: foundCached: False @ Service/Repository.cs:200
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: result: 2 @ Service/Repository.cs:201
+DEBUG: 31318: Artefacts.Client1: Repository`1.AddToCache: Add to cache: 2 for expression Artefacts.Count() @ Service/Repository.cs:56
+INFO: 31318: Artefacts.Client1: NUnitTestClass.TestArtefacts: Proxy.Artefacts.Count: 2 @ Client1/NUnitTestClass.cs:64
+INFO: 31318: Artefacts.Client1: NUnitTestClass.TestArtefacts: Proxy.Artefacts: Artefacts.RepositoryProxy`1[Artefacts.Artefact] @ Client1/NUnitTestClass.cs:65
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts @ Service/Repository.cs:154
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts @ Service/Repository.cs:159
+DEBUG: 31318: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] returned from cache @ Service/DataStore.cs:133
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Artefact] @ Service/Repository.cs:164
+DEBUG: 31318: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Artefact] for expression Artefacts @ Service/Repository.cs:56
+DEBUG: 31318: Artefacts.Client1: Repository`1.Get: id = 554d34e8eba14e7456bf3734, return obj = [Artefact: disk://cvcv4275046z120bgn/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Service/RepositoryProxy.cs:115
+DEBUG: 31318: Artefacts.Client1: Repository`1.Get: id = 554d34e8eba14e7456bf3736, return obj = [Artefact: disk://s2h7jd2z907350/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Service/RepositoryProxy.cs:115
+INFO: 31318: Artefacts.Client1: NUnitTestClass.TestArtefacts: Proxy.Artefacts:
+	{"Id":"554d34e8eba14e7456bf3734","URI":"disk://cvcv4275046z120bgn/","Aspects":[{"Id":"554d34e8eba14e7456bf3735","ArtefactId":"554d34e8eba14e7456bf3734","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5607.11183, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"CVCV4275046Z120BGN","Host":{"__type":"Artefacts.Host, ArtefactService","HostId":"a8c01401","Domain":"domain"},"Name":"sda","Size":"120034123776","Model":"INTEL_SSDSC2CW120A3"}}],"TimeChecked":"\/Date(1431123176000+0800)\/","TimeModified":"\/Date(1431123176000+0800)\/"}
+	{"Id":"554d34e8eba14e7456bf3736","URI":"disk://s2h7jd2z907350/","Aspects":[{"Id":"554d34e8eba14e7456bf3737","ArtefactId":"554d34e8eba14e7456bf3736","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5607.11183, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"S2H7JD2Z907350","Host":{"__type":"Artefacts.Host, ArtefactService","HostId":"a8c01401","Domain":"domain"},"Name":"sdb","Size":"2000398934016","Model":"SAMSUNG_HD204UI"}}],"TimeChecked":"\/Date(1431123176000+0800)\/","TimeModified":"\/Date(1431123176000+0800)\/"}
+ @ Client1/NUnitTestClass.cs:69
+INFO: 31318: Artefacts.Client1: MainClass.Main: ----- Finish Test: TestArtefacts: Success @ Client1/Program.cs:128
+INFO: 31318: Artefacts.Client1: MainClass.Main: ----- Start Test: TestAspects @ Client1/Program.cs:126
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: expression: Aspects.Count() @ Service/Repository.cs:190
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: Visited(e): Aspects.Count() @ Service/Repository.cs:195
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: foundCached: False @ Service/Repository.cs:200
+DEBUG: 31318: Artefacts.Client1: Repository`1.Execute: result: 0 @ Service/Repository.cs:201
+DEBUG: 31318: Artefacts.Client1: Repository`1.AddToCache: Add to cache: 0 for expression Aspects.Count() @ Service/Repository.cs:56
+INFO: 31318: Artefacts.Client1: NUnitTestClass.TestAspects: Proxy.Aspects.Count: 0 @ Client1/NUnitTestClass.cs:78
+INFO: 31318: Artefacts.Client1: NUnitTestClass.TestAspects: Proxy.Aspects: Artefacts.RepositoryProxy`1[Artefacts.Aspect] @ Client1/NUnitTestClass.cs:79
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts_Aspect @ Service/Repository.cs:154
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts_Aspect @ Service/Repository.cs:159
+DEBUG: 31318: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Aspect] returned from cache @ Service/DataStore.cs:133
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Aspect] @ Service/Repository.cs:164
+DEBUG: 31318: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Aspect] for expression Artefacts_Aspect @ Service/Repository.cs:56
+INFO: 31318: Artefacts.Client1: NUnitTestClass.TestAspects: Proxy.Aspects:
+ @ Client1/NUnitTestClass.cs:83
+INFO: 31318: Artefacts.Client1: MainClass.Main: ----- Finish Test: TestAspects: Success @ Client1/Program.cs:128
+INFO: 31318: Artefacts.Client1: MainClass.Main: ----- Start Test: TestFSAgent @ Client1/Program.cs:126
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals("Artefacts.FileSystem.Disk"))) @ Service/Repository.cs:154
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals(Convert("Artefacts.FileSystem.Disk")))) @ Service/Repository.cs:159
+DEBUG: 31318: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] returned from cache @ Service/DataStore.cs:133
+DEBUG: 31318: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Artefact] @ Service/Repository.cs:164
+DEBUG: 31318: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Artefact] for expression Artefacts.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals(Convert("Artefacts.FileSystem.Disk")))) @ Service/Repository.cs:56
+INFO: 31318: Artefacts.Client1: FileSystemAgent.Run: Database Disks: Artefacts.Queryable`1[Artefacts.Artefact] @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:116
+INFO: 31318: Artefacts.Client1: FileSystemAgent.Run: Detected Disks: System.Collections.Generic.List`1[Artefacts.FileSystem.Disk] @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:117
+DEBUG: 31318: Artefacts.Client1: Repository`1.Get: id = 554d34e8eba14e7456bf3734, return obj = [Artefact: disk://cvcv4275046z120bgn/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Service/RepositoryProxy.cs:115
+INFO: 31318: Artefacts.Client1: FileSystemAgent.Run: Disk already exists in DB, would update here @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:130
+INFO: 31318: Artefacts.Client1: FileSystemAgent.Run: aDbDisk: Artefacts.FileSystem.Disk @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:131
+DEBUG: 31318: Artefacts.Client1: Repository`1.Get: id = 554d34e8eba14e7456bf3734, return obj = [Artefact: disk://cvcv4275046z120bgn/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Service/RepositoryProxy.cs:115
+DEBUG: 31318: Artefacts.Client1: Repository`1.Get: id = 554d34e8eba14e7456bf3736, return obj = [Artefact: disk://s2h7jd2z907350/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Service/RepositoryProxy.cs:115
+INFO: 31318: Artefacts.Client1: FileSystemAgent.Run: Disk already exists in DB, would update here @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:130
+INFO: 31318: Artefacts.Client1: FileSystemAgent.Run: aDbDisk: Artefacts.FileSystem.Disk @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:131
+INFO: 31318: Artefacts.Client1: MainClass.Main: ----- Finish Test: TestFSAgent: Success @ Client1/Program.cs:128
+
+Press any key to continue...
+

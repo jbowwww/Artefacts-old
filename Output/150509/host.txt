@@ -1,0 +1,161 @@
+jk@UB-D64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+DEBUG: 31299: Artefacts.Host: ArtefactsHost..ctor: Artefacts.ArtefactsHost @ Artefacts.Host/ArtefactsHost.cs:27
+DEBUG: 31299: Artefacts.Host: DataStoreMongo.EnsureCollection: Pre-existing collection "Artefacts" @ Artefacts.Service/DataStoreMongo.cs:155
+DEBUG: 31299: Artefacts.Host: DataStoreMongo.CreateRepository: repository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] @ Artefacts.Service/DataStoreMongo.cs:176
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] added to cache @ Artefacts.Service/DataStore.cs:138
+DEBUG: 31299: Artefacts.Host: DataStoreMongo..ctor: 
+[Artefacts.DataStoreMongo]
+      Client: 
+   [MongoDB.Driver.MongoClient]
+         Settings: ConnectionMode=Automatic;ConnectTimeout=00:00:30;Credentials={{}};GuidRepresentation=CSharpLegacy;IPv6=False;MaxConnectionIdleTime=00:10:00;MaxConnectionLifeTime=00:30:00;MaxConnectionPoolSize=100;MinConnectionPoolSize=0;ReadPreference=Primary;ReplicaSetName=;SecondaryAcceptableLatency=00:00:00.0150000;Servers=localhost:27017;SocketTimeout=00:00:00;Ssl=False;SslVerifyCertificate=True;WaitQueueSize=500;WaitQueueTimeout=00:02:00WriteConcern=Acknowledged; ...
+         _settings: ConnectionMode=Automatic;ConnectTimeout=00:00:30;Credentials={{}};GuidRepresentation=CSharpLegacy;IPv6=False;MaxConnectionIdleTime=00:10:00;MaxConnectionLifeTime=00:30:00;MaxConnectionPoolSize=100;MinConnectionPoolSize=0;ReadPreference=Primary;ReplicaSetName=;SecondaryAcceptableLatency=00:00:00.0150000;Servers=localhost:27017;SocketTimeout=00:00:00;Ssl=False;SslVerifyCertificate=True;WaitQueueSize=500;WaitQueueTimeout=00:02:00WriteConcern=Acknowledged; ...
+      Server: 
+   [MongoDB.Driver.MongoServer]
+         Arbiters: MongoDB.Driver.MongoServerInstance[] ...
+         BuildInfo: MongoDB.Driver.MongoServerBuildInfo ...
+         ConnectionAttempt: 1
+         Instance: MongoDB.Driver.MongoServerInstance ...
+         Instances: MongoDB.Driver.MongoServerInstance[] ...
+         Passives: MongoDB.Driver.MongoServerInstance[] ...
+         Primary: MongoDB.Driver.MongoServerInstance ...
+         ReplicaSetName: (null)
+         RequestConnection: (null)
+         RequestNestingLevel: 0
+         Secondaries: MongoDB.Driver.MongoServerInstance[] ...
+         SequentialId: 1
+         Settings: ConnectionMode=Automatic,ConnectTimeout=00:00:30,Credentials={{}},GuidRepresentation=CSharpLegacy,IPv6=False,MaxConnectionIdleTime=00:10:00,MaxConnectionLifeTime=00:30:00,MaxConnectionPoolSize=100,MinConnectionPoolSize=0,ReadPreference=Primary,ReplicaSetName=,SecondaryAcceptableLatency=00:00:00.0150000,Servers=localhost:27017,SocketTimeout=00:00:00,Ssl=False,SslVerifyCertificate=True,WaitQueueSize=500,WaitQueueTimeout=00:02:00,WriteConcern=Acknowledged ...
+         State: Connected
+         ProxyType: Direct
+         _serverLock: System.Object ...
+         _serverProxy: MongoDB.Driver.Internal.DirectMongoServerProxy ...
+         _settings: ConnectionMode=Automatic,ConnectTimeout=00:00:30,Credentials={{}},GuidRepresentation=CSharpLegacy,IPv6=False,MaxConnectionIdleTime=00:10:00,MaxConnectionLifeTime=00:30:00,MaxConnectionPoolSize=100,MinConnectionPoolSize=0,ReadPreference=Primary,ReplicaSetName=,SecondaryAcceptableLatency=00:00:00.0150000,Servers=localhost:27017,SocketTimeout=00:00:00,Ssl=False,SslVerifyCertificate=True,WaitQueueSize=500,WaitQueueTimeout=00:02:00,WriteConcern=Acknowledged ...
+         _requests: System.Collections.Generic.Dictionary`2[System.Int32,MongoDB.Driver.MongoServer+Request] ...
+         _sequentialId: 1
+      Database: 
+   [MongoDB.Driver.MongoDatabase]
+         CommandCollection: Artefacts.$cmd ...
+         GridFS: MongoDB.Driver.GridFS.MongoGridFS ...
+         Name: Artefacts
+         Server: MongoDB.Driver.MongoServer ...
+         Settings: GuidRepresentation=CSharpLegacy;ReadEncoding=null;ReadPreference=Primary;WriteConcern=Acknowledged;WriteEncoding=null ...
+         _server: MongoDB.Driver.MongoServer ...
+         _settings: GuidRepresentation=CSharpLegacy;ReadEncoding=null;ReadPreference=Primary;WriteConcern=Acknowledged;WriteEncoding=null ...
+         _name: Artefacts
+      ConnectionString: mongodb://localhost:27017
+      _mcArtefacts: (null)
+      _mcAspects: (null)
+      _qpArtefacts: (null)
+      _qpAspects: (null)
+      _visitor: (null)
+      <Client>k__BackingField: MongoDB.Driver.MongoClient ... *
+      <Server>k__BackingField: MongoDB.Driver.MongoServer ... *
+      <Database>k__BackingField: Artefacts ... *
+      <ConnectionString>k__BackingField: mongodb://localhost:27017 @ Artefacts.Service/DataStoreMongo.cs:98
+DEBUG: 31299: Artefacts.Host: ArtefactsService..ctor: Plugin assembly path: ../../../bin/Debug/Plugins/ArtefactFileSystem.dll @ Artefacts.Service/ArtefactsService.cs:73
+DEBUG: 31299: Artefacts.Host: ArtefactsService..ctor: 
+[Artefacts.ArtefactsService]
+      Server: 
+   [Artefacts.Host]
+         HostId: a8c01401
+         Machine: (null)
+         Domain: domain
+         ConnectionId: -1
+         Connected: True
+         ConnectTime: 1/01/0001 12:00:00 AM
+         ConnectionAge: 00:00:00
+         <HostId>k__BackingField: a8c01401
+         <Machine>k__BackingField: (null)
+         <Domain>k__BackingField: domain
+         <ConnectionId>k__BackingField: -1
+         <ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM
+      DataStore: 
+   [Artefacts.DataStoreMongo]
+         Client: MongoDB.Driver.MongoClient ...
+         Server: MongoDB.Driver.MongoServer ...
+         Database: Artefacts ...
+         ConnectionString: mongodb://localhost:27017
+         _mcArtefacts: (null)
+         _mcAspects: (null)
+         _qpArtefacts: (null)
+         _qpAspects: (null)
+         _visitor: (null)
+         <Client>k__BackingField: MongoDB.Driver.MongoClient ...
+         <Server>k__BackingField: MongoDB.Driver.MongoServer ...
+         <Database>k__BackingField: Artefacts ...
+         <ConnectionString>k__BackingField: mongodb://localhost:27017
+      Plugins: 
+[System.Collections.Generic.IEnumerable`1[[System.Reflection.Assembly, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]]
+         ArtefactFileSystem, Version=1.0.5607.11917, Culture=neutral, PublicKeyToken=null ...
+      <Server>k__BackingField: Artefacts.Host ... *
+      <DataStore>k__BackingField: Artefacts.DataStoreMongo ... *
+      <Plugins>k__BackingField: System.Collections.Generic.List`1[System.Reflection.Assembly] ... * @ Artefacts.Service/ArtefactsService.cs:76
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: query.Expression: Artefacts @ Artefacts.Service/ArtefactsService.cs:120
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: expression: value(Artefacts.RepositoryMongo`1[Artefacts.Artefact]).MongoQueryable @ Artefacts.Service/Repository.cs:190
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: Visited(e): Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Artefact])).MongoQueryable @ Artefacts.Service/Repository.cs:195
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: foundCached: False @ Artefacts.Service/Repository.cs:200
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] @ Artefacts.Service/Repository.cs:201
+DEBUG: 31299: Artefacts.Host: Repository`1.AddToCache: Add to cache: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] for expression Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Artefact])).MongoQueryable @ Artefacts.Service/Repository.cs:56
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] @ Artefacts.Service/ArtefactsService.cs:122
+DEBUG: 31299: Artefacts.Host: QueryableResponse..ctor: Artefacts.QueryableResponse @ Artefacts.Service/Messages/QueryableResponse_Generic.cs:39
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: resultFixed: Artefacts.QueryableResponse @ Artefacts.Service/ArtefactsService.cs:130
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: query.Expression: Artefacts @ Artefacts.Service/ArtefactsService.cs:120
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: expression: value(Artefacts.RepositoryMongo`1[Artefacts.Artefact]).MongoQueryable @ Artefacts.Service/Repository.cs:190
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: Visited(e): Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Artefact])).MongoQueryable @ Artefacts.Service/Repository.cs:195
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: foundCached: False @ Artefacts.Service/Repository.cs:200
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] @ Artefacts.Service/Repository.cs:201
+DEBUG: 31299: Artefacts.Host: Repository`1.AddToCache: Add to cache: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] for expression Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Artefact])).MongoQueryable @ Artefacts.Service/Repository.cs:56
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] @ Artefacts.Service/ArtefactsService.cs:122
+DEBUG: 31299: Artefacts.Host: QueryableResponse..ctor: Artefacts.QueryableResponse @ Artefacts.Service/Messages/QueryableResponse_Generic.cs:39
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: resultFixed: Artefacts.QueryableResponse @ Artefacts.Service/ArtefactsService.cs:130
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefactId: 554d34e8eba14e7456bf3734 @ Artefacts.Service/ArtefactsService.cs:103
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefact: [Artefact: disk://cvcv4275046z120bgn/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Artefacts.Service/ArtefactsService.cs:105
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefactId: 554d34e8eba14e7456bf3736 @ Artefacts.Service/ArtefactsService.cs:103
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefact: [Artefact: disk://s2h7jd2z907350/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Artefacts.Service/ArtefactsService.cs:105
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: query.Expression: Aspects @ Artefacts.Service/ArtefactsService.cs:120
+DEBUG: 31299: Artefacts.Host: DataStoreMongo.EnsureCollection: Pre-existing collection "Aspect" @ Artefacts.Service/DataStoreMongo.cs:155
+DEBUG: 31299: Artefacts.Host: DataStoreMongo.CreateRepository: repository: Artefacts.RepositoryMongo`1[Artefacts.Aspect] @ Artefacts.Service/DataStoreMongo.cs:176
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Aspect] added to cache @ Artefacts.Service/DataStore.cs:138
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Aspect] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: expression: value(Artefacts.RepositoryMongo`1[Artefacts.Aspect]).MongoQueryable @ Artefacts.Service/Repository.cs:190
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: Visited(e): Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Aspect])).MongoQueryable @ Artefacts.Service/Repository.cs:195
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: foundCached: False @ Artefacts.Service/Repository.cs:200
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Aspect] @ Artefacts.Service/Repository.cs:201
+DEBUG: 31299: Artefacts.Host: Repository`1.AddToCache: Add to cache: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Aspect] for expression Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Aspect])).MongoQueryable @ Artefacts.Service/Repository.cs:56
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Aspect] @ Artefacts.Service/ArtefactsService.cs:122
+DEBUG: 31299: Artefacts.Host: QueryableResponse..ctor: Artefacts.QueryableResponse @ Artefacts.Service/Messages/QueryableResponse_Generic.cs:39
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: resultFixed: Artefacts.QueryableResponse @ Artefacts.Service/ArtefactsService.cs:130
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: query.Expression: Artefacts_Aspect @ Artefacts.Service/ArtefactsService.cs:120
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Aspect] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Aspect] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: expression: value(Artefacts.RepositoryMongo`1[Artefacts.Aspect]).MongoQueryable @ Artefacts.Service/Repository.cs:190
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: Visited(e): Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Aspect])).MongoQueryable @ Artefacts.Service/Repository.cs:195
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: foundCached: False @ Artefacts.Service/Repository.cs:200
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Aspect] @ Artefacts.Service/Repository.cs:201
+DEBUG: 31299: Artefacts.Host: Repository`1.AddToCache: Add to cache: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Aspect] for expression Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Aspect])).MongoQueryable @ Artefacts.Service/Repository.cs:56
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Aspect] @ Artefacts.Service/ArtefactsService.cs:122
+DEBUG: 31299: Artefacts.Host: QueryableResponse..ctor: Artefacts.QueryableResponse @ Artefacts.Service/Messages/QueryableResponse_Generic.cs:39
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: resultFixed: Artefacts.QueryableResponse @ Artefacts.Service/ArtefactsService.cs:130
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: query.Expression: Artefacts.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals(Convert("Artefacts.FileSystem.Disk")))) @ Artefacts.Service/ArtefactsService.cs:120
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: DataStoreProxy.GetRepository: Artefacts.RepositoryMongo`1[Artefacts.Artefact] returned from cache @ Artefacts.Service/DataStore.cs:133
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: expression: value(Artefacts.RepositoryMongo`1[Artefacts.Artefact]).MongoQueryable.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals(Convert(Convert("Artefacts.FileSystem.Disk"))))) @ Artefacts.Service/Repository.cs:190
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: Visited(e): Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Artefact])).MongoQueryable.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals(Convert(Convert(Convert("Artefacts.FileSystem.Disk")))))) @ Artefacts.Service/Repository.cs:195
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: foundCached: False @ Artefacts.Service/Repository.cs:200
+DEBUG: 31299: Artefacts.Host: Repository`1.Execute: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] @ Artefacts.Service/Repository.cs:201
+DEBUG: 31299: Artefacts.Host: Repository`1.AddToCache: Add to cache: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] for expression Convert(value(Artefacts.RepositoryMongo`1[Artefacts.Artefact])).MongoQueryable.Where(artefact => artefact.Aspects.Any(aspect => aspect.TypeName.Equals(Convert(Convert(Convert("Artefacts.FileSystem.Disk")))))) @ Artefacts.Service/Repository.cs:56
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: result: MongoDB.Driver.Linq.IdentityProjector`1[Artefacts.Artefact] @ Artefacts.Service/ArtefactsService.cs:122
+DEBUG: 31299: Artefacts.Host: QueryableResponse..ctor: Artefacts.QueryableResponse @ Artefacts.Service/Messages/QueryableResponse_Generic.cs:39
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: resultFixed: Artefacts.QueryableResponse @ Artefacts.Service/ArtefactsService.cs:130
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefactId: 554d34e8eba14e7456bf3734 @ Artefacts.Service/ArtefactsService.cs:103
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefact: [Artefact: disk://cvcv4275046z120bgn/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Artefacts.Service/ArtefactsService.cs:105
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefactId: 554d34e8eba14e7456bf3734 @ Artefacts.Service/ArtefactsService.cs:103
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefact: [Artefact: disk://cvcv4275046z120bgn/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Artefacts.Service/ArtefactsService.cs:105
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefactId: 554d34e8eba14e7456bf3736 @ Artefacts.Service/ArtefactsService.cs:103
+DEBUG: 31299: Artefacts.Host: ArtefactsService.Get: artefact: [Artefact: disk://s2h7jd2z907350/: 1 aspects, primary type "Artefacts.FileSystem.Disk"] @ Artefacts.Service/ArtefactsService.cs:105
+
+

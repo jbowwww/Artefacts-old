@@ -1,0 +1,41 @@
+
+
+-------
+Test: Test_FSClient
+-------
+
+DEBUG: 17200: Artefacts.Client1: ClientAgent.Run: : 23/12/2014 Artefacts.FileSystem.FileSystemAgent: Client: Artefacts.ArtefactsRepositoryProxy @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:88
+DEBUG: 17200: Artefacts.Client1: ClientAgent.Run: : 23/12/2014 Artefacts.FileSystem.FileSystemAgent: Host.Current: Artefacts.Host @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:89
+DEBUG: 17200: Artefacts.Client1: ClientAgent.Run: : 23/12/2014 Artefacts.FileSystem.FileSystemAgent: Disks (2) @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:90
+DEBUG: 17200: Artefacts.Client1: ClientAgent.Run: : 23/12/2014 Artefacts.FileSystem.FileSystemAgent: Artefacts.FileSystem.Disk
+{
+	<ArtefactId>k__BackingField: 000000000000000000000000 (Artefacts.FileSystem.Disk)
+	Serial: CVCV4275046Z120BGN (Artefacts.FileSystem.Disk)
+	Host: Artefacts.Host (Artefacts.FileSystem.Disk)
+	Name: sda (Artefacts.FileSystem.Disk)
+	Size: 120034123776 (Artefacts.FileSystem.Disk)
+	Model: INTEL_SSDSC2CW120A3 (Artefacts.FileSystem.Disk)
+}
+ @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:93
+DEBUG: 17200: Artefacts.Client1: ClientAgent.Run: : 23/12/2014 Artefacts.FileSystem.FileSystemAgent: Artefacts.FileSystem.Disk
+{
+	<ArtefactId>k__BackingField: 000000000000000000000000 (Artefacts.FileSystem.Disk)
+	Serial: S2H7JD2Z907350 (Artefacts.FileSystem.Disk)
+	Host: Artefacts.Host (Artefacts.FileSystem.Disk)
+	Name: sdb (Artefacts.FileSystem.Disk)
+	Size: 2000398934016 (Artefacts.FileSystem.Disk)
+	Model: SAMSUNG_HD204UI (Artefacts.FileSystem.Disk)
+}
+ @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:93
+DEBUG: 17200: Artefacts.Client1: Artefact..ctor: : { "_id" : ObjectId("000000000000000000000000"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-23T12:02:02.637Z"), "TimeChecked" : ISODate("2014-12-23T12:02:02.637Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [] } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Artefact.cs:141
+DEBUG: 17200: Artefacts.Client1: ArtefactsRepositoryProxy.Create: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryProxy.cs:42
+DEBUG: 17200: Artefacts.Client1: ArtefactsRepositoryProxy.Create: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryProxy.cs:43
+DEBUG: 17200: Artefacts.Client1: Artefact..ctor: : { "_id" : ObjectId("000000000000000000000000"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-23T12:02:04.039Z"), "TimeChecked" : ISODate("2014-12-23T12:02:04.039Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [] } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Artefact.cs:141
+DEBUG: 17200: Artefacts.Client1: ArtefactsRepositoryProxy.Create: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryProxy.cs:42
+DEBUG: 17200: Artefacts.Client1: ArtefactsRepositoryProxy.Create: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryProxy.cs:43
+
+-------
+
+
+Press any key to continue...
+

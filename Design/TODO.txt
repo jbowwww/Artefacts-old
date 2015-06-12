@@ -1,0 +1,4 @@
+General TODO (started 141210-0409)
+	- Config class (would have to be in Artefacts project so all projects can reference)
+		- Contains log factory
+		- many other things..?

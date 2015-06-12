@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts">
+	<Artefact>
+		<Data>
+			<anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk">
+				<d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+					<Domain i:nil="true" />
+					<HostId>a8c01401</HostId>
+					<Machine>a8c01401</Machine>
+				</d4p1:Host>
+				<d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model>
+				<d4p1:Name>sda</d4p1:Name>
+				<d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial>
+				<d4p1:Size>120034123776</d4p1:Size>
+			</anyType>
+		</Data>
+		<Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+		<Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson">
+			<d3p1:_increment>1</d3p1:_increment>
+			<d3p1:_machine>5911496</d3p1:_machine>
+			<d3p1:_pid>12399</d3p1:_pid>
+			<d3p1:_timestamp>1418970420</d3p1:_timestamp>
+		</Id>
+		<TimeChecked>2014-12-19T14:27:00.891436+08:00</TimeChecked>
+		<TimeCreated>2014-12-19T14:27:00.891436+08:00</TimeCreated>
+		<TimeUpdated>0001-01-01T00:00:00</TimeUpdated>
+		<URI i:nil="true" />
+	</Artefact>
+	<Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" />
+	<CreateTime>2014-12-19T14:27:00.895557+08:00</CreateTime>
+	<RequestTime>0001-01-01T00:00:00</RequestTime>
+</ArtefactAddRequest>

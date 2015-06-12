@@ -1,0 +1,18 @@
+19/11/2014 21:30
+
+Task: Implement artefacts in ArtefactsFileSystem plugin project
+
+Start: 2130
+Finish: 23:27
+Done:
+ Initial implementation of Artefact classes
+ Not tested at all yet
+ 
+ + ~1 extra hour
+Start: 
+Finish: 
+Done:
+
+Current State (0215 20/11/2014)
+- First insert into MongoDB via service works
+- dupe id exception after that - look into ID semantics for Artefact typeS

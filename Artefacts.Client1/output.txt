@@ -1,0 +1,11 @@
+
+-------
+Test: Test_FSClient
+-------
+
+DEBUG: 11685: Artefacts.Client1: ClientAgent.Run: : Client: Artefacts.ArtefactsRepositoryProxy @ Plugins/FileSystem/Client/FileSystemAgent.cs:89
+DEBUG: 11685: Artefacts.Client1: ClientAgent.Run: : Host.Current: Artefacts.Host @ Plugins/FileSystem/Client/FileSystemAgent.cs:90
+DEBUG: 11685: Artefacts.Client1: ClientAgent.Run: : Disks (2) @ Plugins/FileSystem/Client/FileSystemAgent.cs:91
+DEBUG: 11685: Artefacts.Client1: ClientAgent.Run: : { "_id" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3", "ArtefactId" : "000000000000000000000000" } @ Plugins/FileSystem/Client/FileSystemAgent.cs:94
+DEBUG: 11685: Artefacts.Client1: ClientAgent.Run: : { "_id" : "S2H7JD2Z907350", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sdb", "Size" : NumberLong("2000398934016"), "Model" : "SAMSUNG_HD204UI", "ArtefactId" : "000000000000000000000000" } @ Plugins/FileSystem/Client/FileSystemAgent.cs:94
+DEBUG: 11685: Artefacts.Client1: Artefact..ctor: : [{ "_t" : "Disk", "_id" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3", "ArtefactId" : "000000000000000000000000" }] @ Artefacts/Artefact.cs:254

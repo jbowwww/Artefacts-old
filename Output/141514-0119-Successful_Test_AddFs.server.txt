@@ -1,0 +1,62 @@
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401","ConnectionId":-1,"Connected":true,"ConnectTime":"\/Date(-62135596800000-0000)\/","ConnectionAge":"PT0S"}
+DEBUG: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 6, "size" : 936, "avgObjSize" : 156.0, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: ArtefactsService.ctor:
+Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: ArtefactsService.Post: Artefacts.Artefact
+{
+	URI: (null) (Artefacts.Artefact)
+	Host: (null) (Artefacts.Artefact)
+	TimeCreated: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+	TimeChecked: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+	TimeUpdated: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+}
+
+DEBUG: ArtefactsService.Create: { "_id" : ObjectId("000000000000000000000000"), "URI" : null, "Host" : null, "TimeCreated" : ISODate("0001-01-01T00:00:00Z"), "TimeChecked" : ISODate("0001-01-01T00:00:00Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : null }
+DEBUG: WriteConcernResult: MongoDB.Driver.WriteConcernResult
+{
+	CommandResult+_serverInstance: (null) (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "getlasterror" : 1 } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "n" : 0, "connectionId" : 6, "err" : null, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+
+

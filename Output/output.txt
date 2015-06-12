@@ -1,0 +1,375 @@
+
+jk@ub-d64:~$ cd /home/jk/Code/Projects/NET/Artefacts
+jk@ub-d64:~/Code/Projects/NET/Artefacts$ cd Artefacts.Host/bin/Debug/
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+Unhandled Exception:
+System.InvalidCastException: Cannot cast from source type to destination type.
+  at Artefacts.ArtefactsHost..ctor () [0x00000] in <filename unknown>:0 
+  at Artefacts.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.InvalidCastException: Cannot cast from source type to destination type.
+  at Artefacts.ArtefactsHost..ctor () [0x00000] in <filename unknown>:0 
+  at Artefacts.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Post at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:102: Server <?xml version="1.0" encoding="utf-8"?><ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts"><Artefact><Data><anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk"><d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Domain i:nil="true" /><HostId>a8c01401</HostId><Machine>a8c01401</Machine></d4p1:Host><d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model><d4p1:Name>sda</d4p1:Name><d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial><d4p1:Size>120034123776</d4p1:Size></anyType></Data><Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson"><d3p1:_increment>1</d3p1:_increment><d3p1:_machine>5911496</d3p1:_machine><d3p1:_pid>12399</d3p1:_pid><d3p1:_timestamp>1418970420</d3p1:_timestamp></Id><TimeChecked>2014-12-19T14:27:00.891436+08:00</TimeChecked><TimeCreated>2014-12-19T14:27:00.891436+08:00</TimeCreated><TimeUpdated>0001-01-01T00:00:00</TimeUpdated><URI i:nil="true" /></Artefact><Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><CreateTime>2014-12-19T14:27:00.895557+08:00</CreateTime><RequestTime>0001-01-01T00:00:00</RequestTime></ArtefactAddRequest>
+DEBUG: Create at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:87: ArtefactsService.Create: { "_id" : ObjectId("5493c5345a33c8306f000001"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-19T06:27:00.891Z"), "TimeChecked" : ISODate("2014-12-19T06:27:00.891Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "Serial" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3" }] }
+
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Post at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:102: Server <?xml version="1.0" encoding="utf-8"?><ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts"><Artefact><Data><anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk"><d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Domain i:nil="true" /><HostId>a8c01401</HostId><Machine>a8c01401</Machine></d4p1:Host><d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model><d4p1:Name>sda</d4p1:Name><d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial><d4p1:Size>120034123776</d4p1:Size></anyType></Data><Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson"><d3p1:_increment>1</d3p1:_increment><d3p1:_machine>5911496</d3p1:_machine><d3p1:_pid>14008</d3p1:_pid><d3p1:_timestamp>1418971876</d3p1:_timestamp></Id><TimeChecked>2014-12-19T14:51:16.371649+08:00</TimeChecked><TimeCreated>2014-12-19T14:51:16.371649+08:00</TimeCreated><TimeUpdated>0001-01-01T00:00:00</TimeUpdated><URI i:nil="true" /></Artefact><Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><CreateTime>2014-12-19T14:51:16.37734+08:00</CreateTime><RequestTime>0001-01-01T00:00:00</RequestTime></ArtefactAddRequest>
+DEBUG: Create at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:87: ArtefactsService.Create: { "_id" : "5493cae45a33c836b8000001", "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-19T06:51:16.371Z"), "TimeChecked" : ISODate("2014-12-19T06:51:16.371Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "Serial" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3" }] }
+
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Post at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:102: Server <?xml version="1.0" encoding="utf-8"?><ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts"><Artefact><Data><anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk"><d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Domain i:nil="true" /><HostId>a8c01401</HostId><Machine>a8c01401</Machine></d4p1:Host><d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model><d4p1:Name>sda</d4p1:Name><d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial><d4p1:Size>120034123776</d4p1:Size></anyType></Data><Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson"><d3p1:_increment>0</d3p1:_increment><d3p1:_machine>0</d3p1:_machine><d3p1:_pid>0</d3p1:_pid><d3p1:_timestamp>0</d3p1:_timestamp></Id><TimeChecked>2014-12-19T14:53:20.481293+08:00</TimeChecked><TimeCreated>2014-12-19T14:53:20.481293+08:00</TimeCreated><TimeUpdated>0001-01-01T00:00:00</TimeUpdated><URI i:nil="true" /></Artefact><Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><CreateTime>2014-12-19T14:53:20.485722+08:00</CreateTime><RequestTime>0001-01-01T00:00:00</RequestTime></ArtefactAddRequest>
+DEBUG: Create at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:87: ArtefactsService.Create: { "_id" : "000000000000000000000000", "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-19T06:53:20.481Z"), "TimeChecked" : ISODate("2014-12-19T06:53:20.481Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "Serial" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3" }] }
+				
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Post at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:102: Server <?xml version="1.0" encoding="utf-8"?><ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts"><Artefact><Data><anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk"><d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Domain i:nil="true" /><HostId>a8c01401</HostId><Machine>a8c01401</Machine></d4p1:Host><d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model><d4p1:Name>sda</d4p1:Name><d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial><d4p1:Size>120034123776</d4p1:Size></anyType></Data><Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson"><d3p1:_increment>0</d3p1:_increment><d3p1:_machine>0</d3p1:_machine><d3p1:_pid>0</d3p1:_pid><d3p1:_timestamp>0</d3p1:_timestamp></Id><TimeChecked>2014-12-19T15:08:15.290708+08:00</TimeChecked><TimeCreated>2014-12-19T15:08:15.290708+08:00</TimeCreated><TimeUpdated>0001-01-01T00:00:00</TimeUpdated><URI i:nil="true" /></Artefact><Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><CreateTime>2014-12-19T15:08:15.294132+08:00</CreateTime><RequestTime>0001-01-01T00:00:00</RequestTime></ArtefactAddRequest>
+DEBUG: Create at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:87: ArtefactsService.Create: { "_id" : "000000000000000000000000", "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-19T07:08:15.29Z"), "TimeChecked" : ISODate("2014-12-19T07:08:15.29Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "Serial" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3" }] }
+
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Post at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:102: Server <?xml version="1.0" encoding="utf-8"?><ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts"><Artefact><Data><anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk"><d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Domain i:nil="true" /><HostId>a8c01401</HostId><Machine>a8c01401</Machine></d4p1:Host><d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model><d4p1:Name>sda</d4p1:Name><d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial><d4p1:Size>120034123776</d4p1:Size></anyType></Data><Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson"><d3p1:_increment>0</d3p1:_increment><d3p1:_machine>0</d3p1:_machine><d3p1:_pid>0</d3p1:_pid><d3p1:_timestamp>0</d3p1:_timestamp></Id><TimeChecked>2014-12-19T15:14:56.115523+08:00</TimeChecked><TimeCreated>2014-12-19T15:14:56.115523+08:00</TimeCreated><TimeUpdated>0001-01-01T00:00:00</TimeUpdated><URI i:nil="true" /></Artefact><Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><CreateTime>2014-12-19T15:14:56.119396+08:00</CreateTime><RequestTime>0001-01-01T00:00:00</RequestTime></ArtefactAddRequest>
+DEBUG: Create at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:93: ArtefactsService.Create (autoId = True) :
+{ "_id" : "000000000000000000000000", "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-19T07:14:56.115Z"), "TimeChecked" : ISODate("2014-12-19T07:14:56.115Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "Serial" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3" }] }
+
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+
+Unhandled Exception:
+System.BadImageFormatException: Could not load file or assembly '../../../bin/Debug/Plugins/ArtefactFileSystem.dll' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: '../../../bin/Debug/Plugins/ArtefactFileSystem.dll'
+  at (wrapper managed-to-native) System.Reflection.Assembly:LoadFrom (string,bool)
+  at System.Reflection.Assembly.LoadFrom (System.String assemblyFile, System.Security.Policy.Evidence securityEvidence) [0x00000] in <filename unknown>:0 
+  at System.Reflection.Assembly.LoadFile (System.String path, System.Security.Policy.Evidence securityEvidence) [0x00000] in <filename unknown>:0 
+  at System.Reflection.Assembly.LoadFile (System.String path) [0x00000] in <filename unknown>:0 
+  at Artefacts.ArtefactsService..ctor (System.String connString, System.String dbName) [0x00000] in <filename unknown>:0 
+  at Artefacts.ArtefactsHost.Configure (Funq.Container container) [0x00000] in <filename unknown>:0 
+  at ServiceStack.ServiceStackHost.Init () [0x00000] in <filename unknown>:0 
+  at Artefacts.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.BadImageFormatException: Could not load file or assembly '../../../bin/Debug/Plugins/ArtefactFileSystem.dll' or one of its dependencies. An attempt was made to load a program with an incorrect format.
+File name: '../../../bin/Debug/Plugins/ArtefactFileSystem.dll'
+  at (wrapper managed-to-native) System.Reflection.Assembly:LoadFrom (string,bool)
+  at System.Reflection.Assembly.LoadFrom (System.String assemblyFile, System.Security.Policy.Evidence securityEvidence) [0x00000] in <filename unknown>:0 
+  at System.Reflection.Assembly.LoadFile (System.String path, System.Security.Policy.Evidence securityEvidence) [0x00000] in <filename unknown>:0 
+  at System.Reflection.Assembly.LoadFile (System.String path) [0x00000] in <filename unknown>:0 
+  at Artefacts.ArtefactsService..ctor (System.String connString, System.String dbName) [0x00000] in <filename unknown>:0 
+  at Artefacts.ArtefactsHost.Configure (Funq.Container container) [0x00000] in <filename unknown>:0 
+  at ServiceStack.ServiceStackHost.Init () [0x00000] in <filename unknown>:0 
+  at Artefacts.MainClass.Main (System.String[] args) [0x00000] in <filename unknown>:0 
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:136: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24: ArtefactsHost: {"HostId":"a8c01401","Machine":"a8c01401"}
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:66: ArtefactsService.c'tor: MongoDB.Driver.CollectionStatsResult
+{
+	_indexSizes: (null) (MongoDB.Driver.CollectionStatsResult)
+	CommandResult+_serverInstance: MongoDB.Driver.MongoServerInstance (MongoDB.Driver.CommandResult)
+	CommandResult+_command: { "collstats" : "Artefacts" } (MongoDB.Driver.CommandResult)
+	CommandResult+_response: { "ns" : "Artefacts.Artefacts", "count" : 12, "size" : 2720, "avgObjSize" : 226.66666666666666, "storageSize" : 8192, "numExtents" : 1, "nindexes" : 1, "lastExtentSize" : 8192, "paddingFactor" : 1.0, "systemFlags" : 1, "userFlags" : 0, "totalIndexSize" : 8176, "indexSizes" : { "_id_" : 8176 }, "ok" : 1.0 } (MongoDB.Driver.CommandResult)
+}
+
+DEBUG: .ctor at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:89: Server: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+Domain: New Domain: 00000000-0000-0000-0000-000000000000
+Repository: New Domain
+
+Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Post at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:102: Server <?xml version="1.0" encoding="utf-8"?><ArtefactAddRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Artefacts"><Artefact><Data><anyType xmlns:d4p1="http://schemas.datacontract.org/2004/07/Artefacts.FileSystem" i:type="d4p1:Disk"><d4p1:Host xmlns:d5p1="http://schemas.datacontract.org/2004/07/Artefacts" z:Id="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/"><Domain i:nil="true" /><HostId>a8c01401</HostId><Machine>a8c01401</Machine></d4p1:Host><d4p1:Model>INTEL_SSDSC2CW120A3</d4p1:Model><d4p1:Name>sda</d4p1:Name><d4p1:Serial>CVCV4275046Z120BGN</d4p1:Serial><d4p1:Size>120034123776</d4p1:Size></anyType></Data><Host z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><Id xmlns:d3p1="http://schemas.datacontract.org/2004/07/MongoDB.Bson"><d3p1:_increment>0</d3p1:_increment><d3p1:_machine>0</d3p1:_machine><d3p1:_pid>0</d3p1:_pid><d3p1:_timestamp>0</d3p1:_timestamp></Id><TimeChecked>2014-12-19T15:16:09.722214+08:00</TimeChecked><TimeCreated>2014-12-19T15:16:09.722214+08:00</TimeCreated><TimeUpdated>0001-01-01T00:00:00</TimeUpdated><URI i:nil="true" /></Artefact><Client z:Ref="i1" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/" /><CreateTime>2014-12-19T15:16:09.726766+08:00</CreateTime><RequestTime>0001-01-01T00:00:00</RequestTime></ArtefactAddRequest>
+DEBUG: Create at /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:93: ArtefactsService.Create (autoId = True) :
+{ "_id" : "5493d0ba2f29f43d3fc0d185", "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-19T07:16:09.722Z"), "TimeChecked" : ISODate("2014-12-19T07:16:09.722Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "Serial" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : "a8c01401", "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3" }] }
+

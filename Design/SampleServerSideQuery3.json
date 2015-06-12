@@ -1,0 +1,68 @@
+query.Data: {
+	"__type":"Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq",
+	"Arguments":[
+		{
+			"__type":"Serialize.Linq.Nodes.ConstantExpressionNode, Serialize.Linq",
+			"Value":[],
+			"NodeType":"Constant"
+		},
+		{
+			"__type":"Serialize.Linq.Nodes.UnaryExpressionNode, Serialize.Linq",
+			"Operand":{
+				"__type":"Serialize.Linq.Nodes.LambdaExpressionNode, Serialize.Linq",
+				"Body":{
+					"__type":"Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq",
+					"Arguments":[
+						{
+							"__type":"Serialize.Linq.Nodes.ConstantExpressionNode, Serialize.Linq",
+							"Value":"True",
+							"NodeType":"Constant"
+						}],
+					"Method":{
+						"DeclaringType":{"Name":"System.Boolean"},
+						"MemberType":8,
+						"Signature":"Boolean Parse(System.String)"
+					},
+					"NodeType":"Call",
+					"Type":{"Name":"System.Boolean"}
+				},
+				"Parameters":[
+					{
+						"__type":"Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq",
+						"Name":"a",
+						"NodeType":"Parameter",
+						"Type":{"Name":"Artefacts.Artefact"}
+					}],
+				"NodeType":"Lambda",
+				"Type":{
+					"Name":"System.Func`2",
+					"GenericArguments":[
+						{"Name":"Artefacts.Artefact"},
+						{"Name":"System.Boolean"}]
+				}
+			},
+			"NodeType":"Quote",
+			"Type":{
+				"Name":"System.Linq.Expressions.Expression`1",
+				"GenericArguments":[
+					{
+						"Name":"System.Func`2",
+						"GenericArguments":[
+							{"Name":"Artefacts.Artefact"},
+							{"Name":"System.Boolean"}]
+					}]
+			}
+		}],
+	"Method":{
+		"IsGenericMethod":true,
+		"GenericArguments":[{"Name":"Artefacts.Artefact"}],
+		"DeclaringType":{"Name":"System.Linq.Queryable"},
+		"MemberType":8,
+		"Signature":"System.Linq.IQueryable`1[TSource] Where[TSource](System.Linq.IQueryable`1[TSource], System.Linq.Expressions.Expression`1[System.Func`2[TSource,System.Boolean]])"
+	},
+	"NodeType":"Call",
+	"Type":{
+		"Name":"System.Linq.IQueryable`1",
+		"GenericArguments":[{"Name":"Artefacts.Artefact"}]
+	}
+}

@@ -1,0 +1,110 @@
+ x
+15/12/2014 Artefacts.QueryableRequest: ConsoleWriteRequest at offset 55 in file:line:column <filename unknown>:0:0
+15/12/2014 Artefacts.QueryableRequest: requesting with Artefacts.QueryableRequest
+{
+	<QueryExpression>k__BackingField: root (Artefacts.QueryableRequest)
+	QueryString: root (Artefacts.QueryableRequest)
+	<Query>k__BackingField: root (Artefacts.QueryableRequest)
+}
+
+15/12/2014 Artefacts.QueryableResponse: Artefacts.QueryableResponse
+{
+	<QueryId>k__BackingField: -1 (Artefacts.QueryableResponse)
+	<Count>k__BackingField: 0 (Artefacts.QueryableResponse)
+	<ArtefactIds>k__BackingField: System.Int32[] (Artefacts.QueryableResponse)
+}
+
+DEBUG: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+
+DEBUG: Artefacts.ctor: Artefacts.Artefact
+{
+	URI: (null) (Artefacts.Artefact)
+	Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+ (Artefacts.Artefact)
+	TimeCreated: 15/12/2014 1:14:19 AM (Artefacts.Artefact)
+	TimeChecked: 15/12/2014 1:14:19 AM (Artefacts.Artefact)
+	TimeUpdated: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+}
+
+15/12/2014 Artefacts.ArtefactAddRequest: ConsoleWriteRequest at offset 55 in file:line:column <filename unknown>:0:0
+15/12/2014 Artefacts.ArtefactAddRequest: requesting with Artefacts.ArtefactAddRequest
+{
+	Artefact: Artefacts.Artefact
+{
+	URI: (null) (Artefacts.Artefact)
+	Host: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+ (Artefacts.Artefact)
+	TimeCreated: 15/12/2014 1:14:19 AM (Artefacts.Artefact)
+	TimeChecked: 15/12/2014 1:14:19 AM (Artefacts.Artefact)
+	TimeUpdated: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+}
+ (Artefacts.ArtefactAddRequest)
+	CreateTime: 15/12/2014 1:14:19 AM (Artefacts.BaseRequest)
+	RequestTime: 1/01/0001 12:00:00 AM (Artefacts.BaseRequest)
+	Client: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+ (Artefacts.BaseRequest)
+}
+
+15/12/2014 Artefacts.ArtefactAddResponse: Artefacts.ArtefactAddResponse
+{
+	Status: New (Artefacts.ArtefactAddResponse)
+	Request: Artefacts.ArtefactAddRequest
+{
+	Artefact: Artefacts.Artefact
+{
+	URI: (null) (Artefacts.Artefact)
+	Host: (null) (Artefacts.Artefact)
+	TimeCreated: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+	TimeChecked: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+	TimeUpdated: 1/01/0001 12:00:00 AM (Artefacts.Artefact)
+}
+ (Artefacts.ArtefactAddRequest)
+	CreateTime: 15/12/2014 1:14:19 AM (Artefacts.BaseRequest)
+	RequestTime: 1/01/0001 12:00:00 AM (Artefacts.BaseRequest)
+	Client: Artefacts.Host
+{
+	<HostId>k__BackingField: a8c01401 (Artefacts.Host)
+	<Machine>k__BackingField: a8c01401 (Artefacts.Host)
+	<Domain>k__BackingField: (null) (Artefacts.Host)
+	<ConnectionId>k__BackingField: -1 (Artefacts.Host)
+	<ConnectTime>k__BackingField: 1/01/0001 12:00:00 AM (Artefacts.Host)
+}
+ (Artefacts.BaseRequest)
+}
+ (Artefacts.BaseResponse)
+	RequestTime: 15/12/2014 1:14:19 AM (Artefacts.BaseResponse)
+	ResponseTime: 15/12/2014 1:14:19 AM (Artefacts.BaseResponse)
+	Duration: 00:00:00.0641720 (Artefacts.BaseResponse)
+}
+
+
+Press any key to continue...
+

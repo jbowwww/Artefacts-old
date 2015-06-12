@@ -1,0 +1,20 @@
+21/11/2014 20:29
+
+Task: Implement artefacts in ArtefactsFileSystem plugin project
+
+Start: 2030
+Finish: 1030
+Goal:
+	
+Done:
+ 	
+ 	
+ 	
+Start: 0310
+Finish: 
+Goal:
+	
+Done:
+
+Current State (0215 20/11/2014)
+- Closer to Artefact serialization over servicestack & persistence using mongo being functional

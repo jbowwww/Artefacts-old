@@ -1,0 +1,50 @@
+jk@ub-d64:~/Code/Projects/NET/Artefacts/Artefacts.Host/bin/Debug$ clear; ./Artefacts.Host.exe 
+
+
+DEBUG: 17178: Artefacts.Host: ArtefactsHost..ctor: : {"HostId":"a8c01401"} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Host/ArtefactsHost.cs:24
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo..ctor: : {"ConnectionString":"mongodb://localhost:27017","DbName":"Artefacts"} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:89
+DEBUG: 17178: Artefacts.Host: ArtefactsService..ctor: : {"Server":{"HostId":"a8c01401"},"Repository":{"__type":"Artefacts.ArtefactsRepositoryMongo, ArtefactService","ConnectionString":"mongodb://localhost:27017","DbName":"Artefacts"}} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:65
+DEBUG: 17178: Artefacts.Host: ArtefactsService.Post: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:76
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : autoId = True: { "_id" : ObjectId("549959bb2f29f4431afe50ea"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-23T12:02:02.637Z"), "TimeChecked" : ISODate("2014-12-23T12:02:02.637Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "_id" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3", "ArtefactId" : ObjectId("000000000000000000000000") }] } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:117
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.LogWriteConcernResult: : WriteConcernResult: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:38
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : Response: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:120
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : ToBsonDocument: 7 elements, BsonType: Document, AllowDupes: False
+{ "_id" : ObjectId("549959bb2f29f4431afe50ea"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-23T12:02:02.637Z"), "TimeChecked" : ISODate("2014-12-23T12:02:02.637Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "_id" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3", "ArtefactId" : ObjectId("000000000000000000000000") }] } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:129
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : Data: Artefacts.FileSystem.Disk: Artefacts.FileSystem.Disk
+{
+	<ArtefactId>k__BackingField: 549959bb2f29f4431afe50ea (Artefacts.FileSystem.Disk)
+	Serial: CVCV4275046Z120BGN (Artefacts.FileSystem.Disk)
+	Host: Artefacts.Host (Artefacts.FileSystem.Disk)
+	Name: sda (Artefacts.FileSystem.Disk)
+	Size: 120034123776 (Artefacts.FileSystem.Disk)
+	Model: INTEL_SSDSC2CW120A3 (Artefacts.FileSystem.Disk)
+}
+ @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:142
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : Data - BsonDoc: 7 elements, BsonType: Document, AllowDupes: False
+{ "_t" : "Disk", "_id" : "CVCV4275046Z120BGN", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sda", "Size" : NumberLong("120034123776"), "Model" : "INTEL_SSDSC2CW120A3", "ArtefactId" : ObjectId("549959bb2f29f4431afe50ea") } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:151
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.LogWriteConcernResult: : WriteConcernResult: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:38
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.LogWriteConcernResult: : WriteConcernResult: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:38
+DEBUG: 17178: Artefacts.Host: ArtefactsService.Post: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:80
+DEBUG: 17178: Artefacts.Host: ArtefactsService.Post: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:76
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : autoId = True: { "_id" : ObjectId("549959bc2f29f4431afe50eb"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-23T12:02:04.039Z"), "TimeChecked" : ISODate("2014-12-23T12:02:04.039Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "_id" : "S2H7JD2Z907350", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sdb", "Size" : NumberLong("2000398934016"), "Model" : "SAMSUNG_HD204UI", "ArtefactId" : ObjectId("000000000000000000000000") }] } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:117
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.LogWriteConcernResult: : WriteConcernResult: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:38
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : Response: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:120
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : ToBsonDocument: 7 elements, BsonType: Document, AllowDupes: False
+{ "_id" : ObjectId("549959bc2f29f4431afe50eb"), "URI" : null, "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "TimeCreated" : ISODate("2014-12-23T12:02:04.039Z"), "TimeChecked" : ISODate("2014-12-23T12:02:04.039Z"), "TimeUpdated" : ISODate("0001-01-01T00:00:00Z"), "Data" : [{ "_t" : "Disk", "_id" : "S2H7JD2Z907350", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sdb", "Size" : NumberLong("2000398934016"), "Model" : "SAMSUNG_HD204UI", "ArtefactId" : ObjectId("000000000000000000000000") }] } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:129
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : Data: Artefacts.FileSystem.Disk: Artefacts.FileSystem.Disk
+{
+	<ArtefactId>k__BackingField: 549959bc2f29f4431afe50eb (Artefacts.FileSystem.Disk)
+	Serial: S2H7JD2Z907350 (Artefacts.FileSystem.Disk)
+	Host: Artefacts.Host (Artefacts.FileSystem.Disk)
+	Name: sdb (Artefacts.FileSystem.Disk)
+	Size: 2000398934016 (Artefacts.FileSystem.Disk)
+	Model: SAMSUNG_HD204UI (Artefacts.FileSystem.Disk)
+}
+ @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:142
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.Create: : Data - BsonDoc: 7 elements, BsonType: Document, AllowDupes: False
+{ "_t" : "Disk", "_id" : "S2H7JD2Z907350", "Host" : { "HostId" : "a8c01401", "Machine" : null, "ConnectTime" : ISODate("0001-01-01T00:00:00Z") }, "Name" : "sdb", "Size" : NumberLong("2000398934016"), "Model" : "SAMSUNG_HD204UI", "ArtefactId" : ObjectId("549959bc2f29f4431afe50eb") } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:151
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.LogWriteConcernResult: : WriteConcernResult: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:38
+DEBUG: 17178: Artefacts.Host: ArtefactsRepositoryMongo.LogWriteConcernResult: : WriteConcernResult: { "n" : 0, "connectionId" : 99, "err" : null, "ok" : 1.0 } @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsRepositoryMongo.cs:38
+DEBUG: 17178: Artefacts.Host: ArtefactsService.Post: : {} @ /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/ArtefactsService.cs:80
+
+

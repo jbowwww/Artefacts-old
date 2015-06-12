@@ -1,0 +1,169 @@
+
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] added to cache @ Service/DataStore.cs:138
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Aspect] added to cache @ Service/DataStore.cs:138
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy..ctor: 
+[Artefacts.DataStoreProxy]
+      _client: 
+   [ServiceStack.JsvServiceClient]
+         Format: jsv
+         ContentType: application/jsv
+         StreamDeserializer: ServiceStack.Web.StreamDeserializerDelegate ... @ Service/DataStoreProxy.cs:56
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent..ctor: {
+	BaseUri: "file://localhost/%3F*",
+	BasePath: /?*,
+	Match: "",
+	RecursionLimit: -1
+} @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:71
+INFO: 23128: Artefacts.Client1: MainClass.Main: ----- Start Test: TestArtefacts @ Client1/Program.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Execute: expression: Artefacts.Count() @ Service/Repository.cs:202
+DEBUG: 23128: Artefacts.Client1: Repository`1.Execute: Visited(e): Artefacts.Count() @ Service/Repository.cs:207
+DEBUG: 23128: Artefacts.Client1: Repository`1.Evaluate: Execute(e): Artefacts @ Service/RepositoryProxy.cs:84
+DEBUG: 23128: Artefacts.Client1: Repository`1.Evaluate: result: 2 @ Service/RepositoryProxy.cs:86
+DEBUG: 23128: Artefacts.Client1: Repository`1.Execute: result: 2 @ Service/Repository.cs:212
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: 2 for expression Artefacts.Count() @ Service/Repository.cs:139
+INFO: 23128: Artefacts.Client1: NUnitTestClass.TestArtefacts: Proxy.Artefacts.Count: 2 @ Client1/NUnitTestClass.cs:64
+INFO: 23128: Artefacts.Client1: NUnitTestClass.TestArtefacts: Proxy.Artefacts: Artefacts.RepositoryProxy`1[Artefacts.Artefact] @ Client1/NUnitTestClass.cs:65
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] returned from cache @ Service/DataStore.cs:133
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Artefact] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Artefact] for expression Artefacts @ Service/Repository.cs:139
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: id: 552c114135b9e5039f372cb1 @ Service/RepositoryProxy.cs:101
+DEBUG: 23128: Artefacts.Client1: Aspect..ctor: Artefacts.Aspect @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Aspect.cs:108
+DEBUG: 23128: Artefacts.Client1: Host..ctor: Default constructor @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: return obj: {"Id":"552c114135b9e5039f372cb1","URI":"disk://cvcv4275046z120bgn/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb1","TimeCreated":"\/Date(1428951361251+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"CVCV4275046Z120BGN","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sda","Size":"120034123776","Model":"INTEL_SSDSC2CW120A3"}}],"TimeCreated":"\/Date(1428951361232+0800)\/","TimeChecked":"\/Date(1428951361232+0800)\/","TimeUpdated":"\/Date(1428951361232+0800)\/"} @ Service/RepositoryProxy.cs:103
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: id: 552c114135b9e5039f372cb2 @ Service/RepositoryProxy.cs:101
+DEBUG: 23128: Artefacts.Client1: Aspect..ctor: Artefacts.Aspect @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Aspect.cs:108
+DEBUG: 23128: Artefacts.Client1: Host..ctor: Default constructor @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: return obj: {"Id":"552c114135b9e5039f372cb2","URI":"disk://s2h7jd2z907350/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb2","TimeCreated":"\/Date(1428951361467+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"S2H7JD2Z907350","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sdb","Size":"2000398934016","Model":"SAMSUNG_HD204UI"}}],"TimeCreated":"\/Date(1428951361467+0800)\/","TimeChecked":"\/Date(1428951361467+0800)\/","TimeUpdated":"\/Date(1428951361467+0800)\/"} @ Service/RepositoryProxy.cs:103
+INFO: 23128: Artefacts.Client1: NUnitTestClass.TestArtefacts: Proxy.Artefacts:
+	{"Id":"552c114135b9e5039f372cb1","URI":"disk://cvcv4275046z120bgn/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb1","TimeCreated":"\/Date(1428951361251+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"CVCV4275046Z120BGN","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sda","Size":"120034123776","Model":"INTEL_SSDSC2CW120A3"}}],"TimeCreated":"\/Date(1428951361232+0800)\/","TimeChecked":"\/Date(1428951361232+0800)\/","TimeUpdated":"\/Date(1428951361232+0800)\/"}
+	{"Id":"552c114135b9e5039f372cb2","URI":"disk://s2h7jd2z907350/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb2","TimeCreated":"\/Date(1428951361467+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"S2H7JD2Z907350","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sdb","Size":"2000398934016","Model":"SAMSUNG_HD204UI"}}],"TimeCreated":"\/Date(1428951361467+0800)\/","TimeChecked":"\/Date(1428951361467+0800)\/","TimeUpdated":"\/Date(1428951361467+0800)\/"}
+ @ Client1/NUnitTestClass.cs:69
+INFO: 23128: Artefacts.Client1: MainClass.Main: ----- Finish Test: TestArtefacts: Success @ Client1/Program.cs:128
+INFO: 23128: Artefacts.Client1: MainClass.Main: ----- Start Test: TestAspects @ Client1/Program.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Execute: expression: Aspects.Count() @ Service/Repository.cs:202
+DEBUG: 23128: Artefacts.Client1: Repository`1.Execute: Visited(e): Aspects.Count() @ Service/Repository.cs:207
+DEBUG: 23128: Artefacts.Client1: Repository`1.Evaluate: Execute(e): Aspects @ Service/RepositoryProxy.cs:84
+DEBUG: 23128: Artefacts.Client1: Repository`1.Evaluate: result: 0 @ Service/RepositoryProxy.cs:86
+DEBUG: 23128: Artefacts.Client1: Repository`1.Execute: result: 0 @ Service/Repository.cs:212
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: 0 for expression Aspects.Count() @ Service/Repository.cs:139
+INFO: 23128: Artefacts.Client1: NUnitTestClass.TestAspects: Proxy.Aspects.Count: 0 @ Client1/NUnitTestClass.cs:78
+INFO: 23128: Artefacts.Client1: NUnitTestClass.TestAspects: Proxy.Aspects: Artefacts.RepositoryProxy`1[Artefacts.Aspect] @ Client1/NUnitTestClass.cs:79
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts_Aspect @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts_Aspect @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Aspect] returned from cache @ Service/DataStore.cs:133
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Aspect] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Aspect] for expression Artefacts_Aspect @ Service/Repository.cs:139
+INFO: 23128: Artefacts.Client1: NUnitTestClass.TestAspects: Proxy.Aspects:
+ @ Client1/NUnitTestClass.cs:83
+INFO: 23128: Artefacts.Client1: MainClass.Main: ----- Finish Test: TestAspects: Success @ Client1/Program.cs:128
+INFO: 23128: Artefacts.Client1: MainClass.Main: ----- Start Test: TestFSAgent @ Client1/Program.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts.Where(a => (a.TimeCreated > new DateTime(2015, 2, 1))) @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts.Where(a => (a.TimeCreated > new DateTime(Convert(Parse("2015")), Convert(Parse("2")), Convert(Parse("1"))))) @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] returned from cache @ Service/DataStore.cs:133
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Artefact] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Artefact] for expression Artefacts.Where(a => (a.TimeCreated > new DateTime(Convert(Parse("2015")), Convert(Parse("2")), Convert(Parse("1"))))) @ Service/Repository.cs:139
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent.Run: testArtefacts.Count: 2 @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:84
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: id: 552c114135b9e5039f372cb1 @ Service/RepositoryProxy.cs:101
+DEBUG: 23128: Artefacts.Client1: Aspect..ctor: Artefacts.Aspect @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Aspect.cs:108
+DEBUG: 23128: Artefacts.Client1: Host..ctor: Default constructor @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: return obj: {"Id":"552c114135b9e5039f372cb1","URI":"disk://cvcv4275046z120bgn/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb1","TimeCreated":"\/Date(1428951361251+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"CVCV4275046Z120BGN","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sda","Size":"120034123776","Model":"INTEL_SSDSC2CW120A3"}}],"TimeCreated":"\/Date(1428951361232+0800)\/","TimeChecked":"\/Date(1428951361232+0800)\/","TimeUpdated":"\/Date(1428951361232+0800)\/"} @ Service/RepositoryProxy.cs:103
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent.Run: artefact: Artefacts.Artefact @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:86
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: id: 552c114135b9e5039f372cb2 @ Service/RepositoryProxy.cs:101
+DEBUG: 23128: Artefacts.Client1: Aspect..ctor: Artefacts.Aspect @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Aspect.cs:108
+DEBUG: 23128: Artefacts.Client1: Host..ctor: Default constructor @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: return obj: {"Id":"552c114135b9e5039f372cb2","URI":"disk://s2h7jd2z907350/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb2","TimeCreated":"\/Date(1428951361467+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"S2H7JD2Z907350","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sdb","Size":"2000398934016","Model":"SAMSUNG_HD204UI"}}],"TimeCreated":"\/Date(1428951361467+0800)\/","TimeChecked":"\/Date(1428951361467+0800)\/","TimeUpdated":"\/Date(1428951361467+0800)\/"} @ Service/RepositoryProxy.cs:103
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent.Run: artefact: Artefacts.Artefact @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:86
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts.Where(a => True) @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts.Where(a => Convert(Parse("True"))) @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Artefact] returned from cache @ Service/DataStore.cs:133
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Artefact] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Artefact] for expression Artefacts.Where(a => Convert(Parse("True"))) @ Service/Repository.cs:139
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent.Run: diskArtefacts.Count: 2 @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:88
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: id: 552c114135b9e5039f372cb1 @ Service/RepositoryProxy.cs:101
+DEBUG: 23128: Artefacts.Client1: Aspect..ctor: Artefacts.Aspect @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Aspect.cs:108
+DEBUG: 23128: Artefacts.Client1: Host..ctor: Default constructor @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: return obj: {"Id":"552c114135b9e5039f372cb1","URI":"disk://cvcv4275046z120bgn/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb1","TimeCreated":"\/Date(1428951361251+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"CVCV4275046Z120BGN","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sda","Size":"120034123776","Model":"INTEL_SSDSC2CW120A3"}}],"TimeCreated":"\/Date(1428951361232+0800)\/","TimeChecked":"\/Date(1428951361232+0800)\/","TimeUpdated":"\/Date(1428951361232+0800)\/"} @ Service/RepositoryProxy.cs:103
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent.Run: artefact: Artefacts.Artefact @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:90
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: id: 552c114135b9e5039f372cb2 @ Service/RepositoryProxy.cs:101
+DEBUG: 23128: Artefacts.Client1: Aspect..ctor: Artefacts.Aspect @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Aspect.cs:108
+DEBUG: 23128: Artefacts.Client1: Host..ctor: Default constructor @ /home/jk/Code/Projects/NET/Artefacts/Artefacts/Host.cs:126
+DEBUG: 23128: Artefacts.Client1: Repository`1.Get: return obj: {"Id":"552c114135b9e5039f372cb2","URI":"disk://s2h7jd2z907350/","Aspects":[{"ArtefactId":"552c114135b9e5039f372cb2","TimeCreated":"\/Date(1428951361467+0800)\/","TypeName":"Artefacts.FileSystem.Disk","AssemblyName":"ArtefactFileSystem, Version=1.0.5582.5272, Culture=neutral, PublicKeyToken=null","MemberGetBinding":5172,"MemberSetBinding":10292,"Fields":{"Serial":"S2H7JD2Z907350","Host":{"__type":"Artefacts.Host, Artefacts","HostId":"a8c01401","Domain":"domain"},"Name":"sdb","Size":"2000398934016","Model":"SAMSUNG_HD204UI"}}],"TimeCreated":"\/Date(1428951361467+0800)\/","TimeChecked":"\/Date(1428951361467+0800)\/","TimeUpdated":"\/Date(1428951361467+0800)\/"} @ Service/RepositoryProxy.cs:103
+DEBUG: 23128: Artefacts.Client1: FileSystemAgent.Run: artefact: Artefacts.Artefact @ /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:90
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts.SelectMany(a => a.Aspects) @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts.SelectMany(a => a.Aspects) @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Aspect] returned from cache @ Service/DataStore.cs:133
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Aspect] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Aspect] for expression Artefacts.SelectMany(a => a.Aspects) @ Service/Repository.cs:139
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts.SelectMany(a => a.Aspects).Where(aspect => aspect.Type.Equals(Artefacts.FileSystem.Disk)) @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts.SelectMany(a => a.Aspects).Where(aspect => aspect.Type.Equals(GetType("Artefacts.FileSystem.Disk"))) @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.Aspect] returned from cache @ Service/DataStore.cs:133
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.Aspect] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.Aspect] for expression Artefacts.SelectMany(a => a.Aspects).Where(aspect => aspect.Type.Equals(GetType("Artefacts.FileSystem.Disk"))) @ Service/Repository.cs:139
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: expression: Artefacts.SelectMany(a => a.Aspects).Where(aspect => aspect.Type.Equals(GetType("Artefacts.FileSystem.Disk"))).Select(aspect => aspect.As()) @ Service/Repository.cs:166
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: Visited(e): Artefacts.SelectMany(a => a.Aspects).Where(aspect => aspect.Type.Equals(GetType(Convert("Artefacts.FileSystem.Disk")))).Select(aspect => aspect.As()) @ Service/Repository.cs:171
+DEBUG: 23128: Artefacts.Client1: DataStoreProxy.GetRepository: Artefacts.RepositoryProxy`1[Artefacts.FileSystem.Disk] added to cache @ Service/DataStore.cs:138
+DEBUG: 23128: Artefacts.Client1: Repository`1.CreateQuery: query: Artefacts.Queryable`1[Artefacts.FileSystem.Disk] @ Service/Repository.cs:176
+DEBUG: 23128: Artefacts.Client1: Repository`1.AddToCache: Add to cache: Artefacts.Queryable`1[Artefacts.FileSystem.Disk] for expression Artefacts.SelectMany(a => a.Aspects).Where(aspect => aspect.Type.Equals(GetType(Convert("Artefacts.FileSystem.Disk")))).Select(aspect => aspect.As()) @ Service/Repository.cs:139
+ERROR: 23128: Artefacts.Client1: MainClass.Main: -!!-- Finish Test: TestFSAgent: Failure:
+System.Reflection.TargetInvocationException
+Message: Exception has been thrown by the target of an invocation.
+Source: mscorlib
+TargetSite: MonoMethod: Invoke
+Data: 0
+StackTrace: 
+   at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0 
+  at System.Reflection.MethodBase.Invoke (System.Object obj, System.Object[] parameters) [0x00000] in <filename unknown>:0 
+  at Artefacts.MainClass.Main (System.String[] args) [0x000bc] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Client1/Program.cs:127
+InnerException: ServiceStack.WebServiceException
+   Status: 405: NotSupportedException
+   Error: NotSupportedException: 
+   Source: ServiceStack.Client
+   TargetSite: ServiceClientBase: ThrowWebServiceException
+   Data: 0
+   StackTrace: 
+      at ServiceStack.ServiceClientBase.ThrowWebServiceException[ErrorResponse] (System.Exception ex, System.String requestUri) [0x00000] in <filename unknown>:0 
+     at ServiceStack.ServiceClientBase.ThrowResponseTypeException[QueryableResponse] (System.Object request, System.Exception ex, System.String requestUri) [0x00000] in <filename unknown>:0 
+     at ServiceStack.ServiceClientBase.HandleResponseException[QueryableResponse] (System.Exception ex, System.Object request, System.String requestUri, System.Func`1 createWebRequest, System.Func`2 getResponse, Artefacts.QueryableResponse& response) [0x00000] in <filename unknown>:0 
+     at ServiceStack.ServiceClientBase.Send[QueryableResponse] (System.String httpMethod, System.String relativeOrAbsoluteUrl, System.Object request) [0x00000] in <filename unknown>:0 
+     at ServiceStack.ServiceClientBase.Get[QueryableResponse] (System.String relativeOrAbsoluteUrl) [0x00000] in <filename unknown>:0 
+     at ServiceStack.ServiceClientBase.Get[QueryableResponse] (System.Object requestDto) [0x00000] in <filename unknown>:0 
+     at Artefacts.RepositoryProxy`1[Artefacts.FileSystem.Disk].Evaluate (System.Linq.Expressions.Expression expression) [0x000fe] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/RepositoryProxy.cs:90 
+     at Artefacts.Queryable`1[Artefacts.FileSystem.Disk].get_Response () [0x0001b] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/Queryable.cs:173 
+     at Artefacts.Queryable`1[Artefacts.FileSystem.Disk].get_Result () [0x00002] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/Queryable.cs:185 
+     at Artefacts.Queryable`1[Artefacts.FileSystem.Disk].get_Count () [0x00002] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/Queryable.cs:194 
+     at Artefacts.Queryable`1+QueryableEnumerator[Artefacts.FileSystem.Disk].MoveNext () [0x00018] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Service/Queryable.cs:87 
+     at ServiceStack.Text.Common.WriteListsOfElements`2[Artefacts.FileSystem.Disk,ServiceStack.Text.Json.JsonTypeSerializer].WriteGenericEnumerable (System.IO.TextWriter writer, IEnumerable`1 enumerable) [0x00000] in <filename unknown>:0 
+     at ServiceStack.Text.Common.WriteListsOfElements`2[Artefacts.FileSystem.Disk,ServiceStack.Text.Json.JsonTypeSerializer].WriteEnumerable (System.IO.TextWriter writer, System.Object oEnumerable) [0x00000] in <filename unknown>:0 
+     at ServiceStack.Text.JsonSerializer.SerializeToString (System.Object value, System.Type type) [0x00000] in <filename unknown>:0 
+     at ServiceStack.Text.JsonSerializer.SerializeToString[IQueryable`1] (IQueryable`1 value) [0x00000] in <filename unknown>:0 
+     at ServiceStack.TextExtensions.SerializeToString[IQueryable`1] (IQueryable`1 value) [0x00000] in <filename unknown>:0 
+     at Artefacts.FileSystem.FileSystemAgent.Run (System.Object param) [0x00329] in /home/jk/Code/Projects/NET/Artefacts/Plugins/FileSystem/Client/FileSystemAgent.cs:109 
+     at Artefacts.NUnitTestClass.TestFSAgent () [0x00000] in /home/jk/Code/Projects/NET/Artefacts/Artefacts.Client1/NUnitTestClass.cs:92 
+     at (wrapper managed-to-native) System.Reflection.MonoMethod:InternalInvoke (System.Reflection.MonoMethod,object,object[],System.Exception&)
+     at System.Reflection.MonoMethod.Invoke (System.Object obj, BindingFlags invokeAttr, System.Reflection.Binder binder, System.Object[] parameters, System.Globalization.CultureInfo culture) [0x00000] in <filename unknown>:0
+   InnerException: (null)
+   Total Errors: 0
+   StackTrace:
+         [GetQueryRequest: 16/04/2015 5:27:06 PM]:
+[REQUEST: {Data:"{""__type"":""Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq"",""Arguments"":[{""__type"":""Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq"",""Arguments"":[{""__type"":""Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq"",""Arguments"":[{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""Artefacts"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Repository`1"",""GenericArguments"":[{""Name"":""Artefacts.Artefact""}]}},{""__type"":""Serialize.Linq.Nodes.UnaryExpressionNode, Serialize.Linq"",""Operand"":{""__type"":""Serialize.Linq.Nodes.LambdaExpressionNode, Serialize.Linq"",""Body"":{""__type"":""Serialize.Linq.Nodes.MemberExpressionNode, Serialize.Linq"",""Expression"":{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""a"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Artefact""}},""Member"":{""DeclaringType"":{""Name"":""Artefacts.Artefact""},""MemberType"":16,""Signature"":""Artefacts.Aspect[] Aspects""},""NodeType"":""MemberAccess"",""Type"":{""Name"":""Artefacts.Aspect[]""}},""Parameters"":[{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""a"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Artefact""}}],""NodeType"":""Lambda"",""Type"":{""Name"":""System.Func`2"",""GenericArguments"":[{""Name"":""Artefacts.Artefact""},{""Name"":""System.Collections.Generic.IEnumerable`1"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""}]}]}},""NodeType"":""Quote"",""Type"":{""Name"":""System.Linq.Expressions.Expression`1"",""GenericArguments"":[{""Name"":""System.Func`2"",""GenericArguments"":[{""Name"":""Artefacts.Artefact""},{""Name"":""System.Collections.Generic.IEnumerable`1"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""}]}]}]}}],""Method"":{""IsGenericMethod"":true,""GenericArguments"":[{""Name"":""Artefacts.Artefact""},{""Name"":""Artefacts.Aspect""}],""DeclaringType"":{""Name"":""System.Linq.Queryable""},""MemberType"":8,""Signature"":""System.Linq.IQueryable`1[TResult] SelectMany[TSource,TResult](System.Linq.IQueryable`1[TSource], System.Linq.Expressions.Expression`1[System.Func`2[TSource,System.Collections.Generic.IEnumerable`1[TResult]]])""},""NodeType"":""Call"",""Type"":{""Name"":""System.Linq.IQueryable`1"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""}]}},{""__type"":""Serialize.Linq.Nodes.UnaryExpressionNode, Serialize.Linq"",""Operand"":{""__type"":""Serialize.Linq.Nodes.LambdaExpressionNode, Serialize.Linq"",""Body"":{""__type"":""Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq"",""Arguments"":[{""__type"":""Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq"",""Arguments"":[{""__type"":""Serialize.Linq.Nodes.UnaryExpressionNode, Serialize.Linq"",""Operand"":{""__type"":""Serialize.Linq.Nodes.ConstantExpressionNode, Serialize.Linq"",""Value"":""Artefacts.FileSystem.Disk"",""NodeType"":""Constant""},""NodeType"":""Convert"",""Type"":{""Name"":""System.String""}}],""Method"":{""DeclaringType"":{""Name"":""System.Type""},""MemberType"":8,""Signature"":""System.Type GetType(System.String)""},""NodeType"":""Call"",""Type"":{""Name"":""System.Type""}}],""Method"":{""DeclaringType"":{""Name"":""System.Type""},""MemberType"":8,""Signature"":""Boolean Equals(System.Type)""},""Object"":{""__type"":""Serialize.Linq.Nodes.MemberExpressionNode, Serialize.Linq"",""Expression"":{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""aspect"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Aspect""}},""Member"":{""DeclaringType"":{""Name"":""Artefacts.Aspect""},""MemberType"":16,""Signature"":""System.Type Type""},""NodeType"":""MemberAccess"",""Type"":{""Name"":""System.Type""}},""NodeType"":""Call"",""Type"":{""Name"":""System.Boolean""}},""Parameters"":[{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""aspect"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Aspect""}}],""NodeType"":""Lambda"",""Type"":{""Name"":""System.Func`2"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""},{""Name"":""System.Boolean""}]}},""NodeType"":""Quote"",""Type"":{""Name"":""System.Linq.Expressions.Expression`1"",""GenericArguments"":[{""Name"":""System.Func`2"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""},{""Name"":""System.Boolean""}]}]}}],""Method"":{""IsGenericMethod"":true,""GenericArguments"":[{""Name"":""Artefacts.Aspect""}],""DeclaringType"":{""Name"":""System.Linq.Queryable""},""MemberType"":8,""Signature"":""System.Linq.IQueryable`1[TSource] Where[TSource](System.Linq.IQueryable`1[TSource], System.Linq.Expressions.Expression`1[System.Func`2[TSource,System.Boolean]])""},""NodeType"":""Call"",""Type"":{""Name"":""System.Linq.IQueryable`1"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""}]}},{""__type"":""Serialize.Linq.Nodes.UnaryExpressionNode, Serialize.Linq"",""Operand"":{""__type"":""Serialize.Linq.Nodes.LambdaExpressionNode, Serialize.Linq"",""Body"":{""__type"":""Serialize.Linq.Nodes.MethodCallExpressionNode, Serialize.Linq"",""Arguments"":[],""Method"":{""IsGenericMethod"":true,""GenericArguments"":[{""Name"":""Artefacts.FileSystem.Disk""}],""DeclaringType"":{""Name"":""Artefacts.Aspect""},""MemberType"":8,""Signature"":""T As[T]()""},""Object"":{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""aspect"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Aspect""}},""NodeType"":""Call"",""Type"":{""Name"":""Artefacts.FileSystem.Disk""}},""Parameters"":[{""__type"":""Serialize.Linq.Nodes.ParameterExpressionNode, Serialize.Linq"",""Name"":""aspect"",""NodeType"":""Parameter"",""Type"":{""Name"":""Artefacts.Aspect""}}],""NodeType"":""Lambda"",""Type"":{""Name"":""System.Func`2"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""},{""Name"":""Artefacts.FileSystem.Disk""}]}},""NodeType"":""Quote"",""Type"":{""Name"":""System.Linq.Expressions.Expression`1"",""GenericArguments"":[{""Name"":""System.Func`2"",""GenericArguments"":[{""Name"":""Artefacts.Aspect""},{""Name"":""Artefacts.FileSystem.Disk""}]}]}}],""Method"":{""IsGenericMethod"":true,""GenericArguments"":[{""Name"":""Artefacts.Aspect""},{""Name"":""Artefacts.FileSystem.Disk""}],""DeclaringType"":{""Name"":""System.Linq.Queryable""},""MemberType"":8,""Signature"":""System.Linq.IQueryable`1[TResult] Select[TSource,TResult](System.Linq.IQueryable`1[TSource], System.Linq.Expressions.Expression`1[System.Func`2[TSource,TResult]])""},""NodeType"":""Call"",""Type"":{""Name"":""System.Linq.IQueryable`1"",""GenericArguments"":[{""Name"":""Artefacts.FileSystem.Disk""}]}}"}]
+System.NotSupportedException: The SelectMany query operator is not supported.
+at MongoDB.Driver.Linq.SelectQuery.TranslateMethodCall (System.Linq.Expressions.MethodCallExpression) <0x0062b>
+at MongoDB.Driver.Linq.SelectQuery.Translate (System.Linq.Expressions.Expression) <0x0012f>
+at MongoDB.Driver.Linq.SelectQuery.TranslateMethodCall (System.Linq.Expressions.MethodCallExpression) <0x00073>
+at MongoDB.Driver.Linq.SelectQuery.Translate (System.Linq.Expressions.Expression) <0x0012f>
+at MongoDB.Driver.Linq.SelectQuery.TranslateMethodCall (System.Linq.Expressions.MethodCallExpression) <0x00073>
+at MongoDB.Driver.Linq.SelectQuery.Translate (System.Linq.Expressions.Expression) <0x0012f>
+at MongoDB.Driver.Linq.MongoQueryTranslator.Translate (MongoDB.Driver.Linq.MongoQueryProvider,System.Linq.Expressions.Expression) <0x0008b>
+at MongoDB.Driver.Linq.MongoQueryProvider.Execute (System.Linq.Expressions.Expression) <0x00027>
+at Artefacts.RepositoryMongo`1<Artefacts.Artefact>.Evaluate (System.Linq.Expressions.Expression) <0x0005b>
+at Artefacts.Repository`1<Artefacts.Artefact>.Execute (System.Linq.Expressions.Expression) <0x001b3>
+at Artefacts.DataStore.Execute (System.Linq.Expressions.Expression) <0x0007e>
+at Artefacts.ArtefactsService.Get (Artefacts.GetQueryRequest) <0x0009a>
+at (wrapper dynamic-method) object.lambda_method (System.Runtime.CompilerServices.Closure,object,object) <0x00074>
+at ServiceStack.Host.ServiceRunner`1<Artefacts.GetQueryRequest>.Execute (ServiceStack.Web.IRequest,object,Artefacts.GetQueryRequest) <0x00408>
+ @ Client1/Program.cs:133
+
+Press any key to continue...
+

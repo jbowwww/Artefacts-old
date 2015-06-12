@@ -1,0 +1,173 @@
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git status 
+On branch RepositoryRewrite
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   Artefacts.Client1/test-results/Artefacts.Client1.csproj.test-cache
+	modified:   Artefacts.Service/Artefacts.Service.csproj
+	modified:   Artefacts.Service/ArtefactsService.cs
+	modified:   Artefacts.Service/ArtefactsService.cs~
+	modified:   Artefacts.Service/DataStore.cs
+	modified:   Artefacts.Service/DataStoreMongo.cs
+	modified:   Artefacts.Service/DataStoreProxy.cs
+	modified:   Artefacts.Service/IDataStore.cs
+	modified:   Artefacts.Service/IRepository.cs
+	modified:   Artefacts.Service/IRepository.cs~
+	modified:   Artefacts.Service/Messages/QueryableResponse_Generic.cs
+	modified:   Artefacts.Service/Queryable.cs
+	modified:   Artefacts.Service/Queryable.cs~
+	modified:   Artefacts.Service/Repository.cs
+	modified:   Artefacts.Service/RepositoryMongo.cs
+	modified:   Artefacts.Service/RepositoryProxy.cs
+	modified:   Artefacts.sln
+	modified:   Artefacts.userprefs
+
+no changes added to commit (use "git add" and/or "git commit -a")
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git branch -va
+error: branch 'origin/HEAD' does not point at a commit
+  AlmostSerializing                      decb84c Working out server side Mongo
+  AspectQueries                          c3774b9 Serializing Artefacts & test disk aspect mostly working (no exceptions). However QueryableResult<>.Count hasn't worked since around making the class generic
+  CRUD                                   a8bce6b Cleanup Artefact / Aspect class, focus on initial goal of creating artefacts/aspects and retrieving collections (default expression, all elements)
+  DataStrategies                         00a722a Artefact and aspects both persisting to a single collection in Mongo
+  Experimental                           c813f92 Rewrote queryables/proxy provider. Should be close to working but infinite recursion crash around Proxy.Execute<>()
+  MajorRedesign                          35163ce Started only tiny bit of code cleanup (1-2 files)
+  PotentialSuccessLinq                   50a516d Might have successfully serialized linq expressions over service
+  QuerySerialization                     d4b431b Most Queries work - not with embedded queryables
+* RepositoryRewrite                      c420a4e Forgot to Save a few files before ocmmit
+  RethinkToRESTCompliance                a098a65 Simple Implementation of ArtefactRepositoryProxy
+  RewrittenQueriesBroken                 3200a4a Aspect queries - broken ??
+  TestSmallRefinements                   9a15058 Fixed up exception formatting, tried(failed) to use Json in GetQueryRequest instead of Xml
+  master                                 ed5005d Use standard REST standards
+  origin/HEAD                            b0200c6 Basic Artefact w/ Host, using Disk aspect can be serialized across client/service and persisted into mongo
+  remotes/origin/AlmostSerializing       decb84c Working out server side Mongo
+  remotes/origin/AspectQueries           c3774b9 Serializing Artefacts & test disk aspect mostly working (no exceptions). However QueryableResult<>.Count hasn't worked since around making the class generic
+  remotes/origin/CRUD                    a8bce6b Cleanup Artefact / Aspect class, focus on initial goal of creating artefacts/aspects and retrieving collections (default expression, all elements)
+  remotes/origin/DataStrategies          00a722a Artefact and aspects both persisting to a single collection in Mongo
+  remotes/origin/Experimental            c813f92 Rewrote queryables/proxy provider. Should be close to working but infinite recursion crash around Proxy.Execute<>()
+  remotes/origin/MajorRedesign           35163ce Started only tiny bit of code cleanup (1-2 files)
+  remotes/origin/PotentialSuccessLinq    50a516d Might have successfully serialized linq expressions over service
+  remotes/origin/QuerySerialization      d4b431b Most Queries work - not with embedded queryables
+  remotes/origin/RepositoryRewrite       c420a4e Forgot to Save a few files before ocmmit
+  remotes/origin/RethinkToRESTCompliance a098a65 Simple Implementation of ArtefactRepositoryProxy
+  remotes/origin/RewrittenQueriesBroken  3200a4a Aspect queries - broken ??
+  remotes/origin/TestSmallRefinements    9a15058 Fixed up exception formatting, tried(failed) to use Json in GetQueryRequest instead of Xml
+  remotes/origin/Win7_Test               8643cc8 Just testing GIT time stamps to see if there are set to UTC (ie 8 hrs behind my clock)
+  remotes/origin/master                  ed5005d Use standard REST standards
+  remotes/origin/origin/HEAD             b0200c6 Basic Artefact w/ Host, using Disk aspect can be serialized across client/service and persisted into mongo
+error: some refs could not be read
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git branch
+  AlmostSerializing
+  AspectQueries
+  CRUD
+  DataStrategies
+  Experimental
+  MajorRedesign
+  PotentialSuccessLinq
+  QuerySerialization
+* RepositoryRewrite
+  RethinkToRESTCompliance
+  RewrittenQueriesBroken
+  TestSmallRefinements
+  master
+  origin/HEAD
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git help add
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git add -Av
+add 'Artefacts.Client1/test-results/Artefacts.Client1.csproj.test-cache'
+add 'Artefacts.Service/Artefacts.Service.csproj'
+add 'Artefacts.Service/ArtefactsService.cs'
+add 'Artefacts.Service/ArtefactsService.cs~'
+add 'Artefacts.Service/DataStore.cs'
+add 'Artefacts.Service/DataStoreMongo.cs'
+add 'Artefacts.Service/DataStoreProxy.cs'
+add 'Artefacts.Service/IDataStore.cs'
+add 'Artefacts.Service/IRepository.cs'
+add 'Artefacts.Service/IRepository.cs~'
+add 'Artefacts.Service/Messages/QueryableResponse_Generic.cs'
+add 'Artefacts.Service/Queryable.cs'
+add 'Artefacts.Service/Queryable.cs~'
+add 'Artefacts.Service/Repository.cs'
+add 'Artefacts.Service/RepositoryMongo.cs'
+add 'Artefacts.Service/RepositoryProxy.cs'
+add 'Artefacts.sln'
+add 'Artefacts.userprefs'
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git commit -m "Majority of Repository (/new DataStore etc) rewriting done (hopefully). First run time error to resolve is DataStoreMongo.Execute(282) Expression not enumerable: Artefacts_Artefact.Count(). Just need to reason through a few of these I expect/hope"
+[RepositoryRewrite af138a2] Majority of Repository (/new DataStore etc) rewriting done (hopefully). First run time error to resolve is DataStoreMongo.Execute(282) Expression not enumerable: Artefacts_Artefact.Count(). Just need to reason through a few of these I expect/hope
+ 18 files changed, 152 insertions(+), 209 deletions(-)
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git push -v --all
+Pushing to https://github.com/jbowwww/Artefacts.git
+Username for 'https://github.com': jbowwww
+Password for 'https://jbowwww@github.com': 
+Counting objects: 121, done.
+Delta compression using up to 2 threads.
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 3.82 KiB | 0 bytes/s, done.
+Total 21 (delta 20), reused 0 (delta 0)
+POST git-receive-pack (4075 bytes)
+To https://github.com/jbowwww/Artefacts.git
+ = [up to date]      AlmostSerializing -> AlmostSerializing
+ = [up to date]      AspectQueries -> AspectQueries
+ = [up to date]      CRUD -> CRUD
+ = [up to date]      DataStrategies -> DataStrategies
+ = [up to date]      Experimental -> Experimental
+ = [up to date]      MajorRedesign -> MajorRedesign
+ = [up to date]      PotentialSuccessLinq -> PotentialSuccessLinq
+ = [up to date]      QuerySerialization -> QuerySerialization
+ = [up to date]      RethinkToRESTCompliance -> RethinkToRESTCompliance
+ = [up to date]      RewrittenQueriesBroken -> RewrittenQueriesBroken
+ = [up to date]      TestSmallRefinements -> TestSmallRefinements
+ = [up to date]      master -> master
+ = [up to date]      origin/HEAD -> origin/HEAD
+   c420a4e..af138a2  RepositoryRewrite -> RepositoryRewrite
+updating local tracking ref 'refs/remotes/origin/AlmostSerializing'
+updating local tracking ref 'refs/remotes/origin/AspectQueries'
+updating local tracking ref 'refs/remotes/origin/CRUD'
+updating local tracking ref 'refs/remotes/origin/DataStrategies'
+updating local tracking ref 'refs/remotes/origin/Experimental'
+updating local tracking ref 'refs/remotes/origin/MajorRedesign'
+updating local tracking ref 'refs/remotes/origin/PotentialSuccessLinq'
+updating local tracking ref 'refs/remotes/origin/QuerySerialization'
+updating local tracking ref 'refs/remotes/origin/RepositoryRewrite'
+updating local tracking ref 'refs/remotes/origin/RethinkToRESTCompliance'
+updating local tracking ref 'refs/remotes/origin/RewrittenQueriesBroken'
+updating local tracking ref 'refs/remotes/origin/TestSmallRefinements'
+updating local tracking ref 'refs/remotes/origin/master'
+updating local tracking ref 'refs/remotes/origin/origin/HEAD'
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git status
+On branch RepositoryRewrite
+nothing to commit, working directory clean
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ git branch -va
+error: branch 'origin/HEAD' does not point at a commit
+  AlmostSerializing                      decb84c Working out server side Mongo
+  AspectQueries                          c3774b9 Serializing Artefacts & test disk aspect mostly working (no exceptions). However QueryableResult<>.Count hasn't worked since around making the class generic
+  CRUD                                   a8bce6b Cleanup Artefact / Aspect class, focus on initial goal of creating artefacts/aspects and retrieving collections (default expression, all elements)
+  DataStrategies                         00a722a Artefact and aspects both persisting to a single collection in Mongo
+  Experimental                           c813f92 Rewrote queryables/proxy provider. Should be close to working but infinite recursion crash around Proxy.Execute<>()
+  MajorRedesign                          35163ce Started only tiny bit of code cleanup (1-2 files)
+  PotentialSuccessLinq                   50a516d Might have successfully serialized linq expressions over service
+  QuerySerialization                     d4b431b Most Queries work - not with embedded queryables
+* RepositoryRewrite                      af138a2 Majority of Repository (/new DataStore etc) rewriting done (hopefully). First run time error to resolve is DataStoreMongo.Execute(282) Expression not enumerable: Artefacts_Artefact.Count(). Just need to reason through a few of these I expect/hope
+  RethinkToRESTCompliance                a098a65 Simple Implementation of ArtefactRepositoryProxy
+  RewrittenQueriesBroken                 3200a4a Aspect queries - broken ??
+  TestSmallRefinements                   9a15058 Fixed up exception formatting, tried(failed) to use Json in GetQueryRequest instead of Xml
+  master                                 ed5005d Use standard REST standards
+  origin/HEAD                            b0200c6 Basic Artefact w/ Host, using Disk aspect can be serialized across client/service and persisted into mongo
+  remotes/origin/AlmostSerializing       decb84c Working out server side Mongo
+  remotes/origin/AspectQueries           c3774b9 Serializing Artefacts & test disk aspect mostly working (no exceptions). However QueryableResult<>.Count hasn't worked since around making the class generic
+  remotes/origin/CRUD                    a8bce6b Cleanup Artefact / Aspect class, focus on initial goal of creating artefacts/aspects and retrieving collections (default expression, all elements)
+  remotes/origin/DataStrategies          00a722a Artefact and aspects both persisting to a single collection in Mongo
+  remotes/origin/Experimental            c813f92 Rewrote queryables/proxy provider. Should be close to working but infinite recursion crash around Proxy.Execute<>()
+  remotes/origin/MajorRedesign           35163ce Started only tiny bit of code cleanup (1-2 files)
+  remotes/origin/PotentialSuccessLinq    50a516d Might have successfully serialized linq expressions over service
+  remotes/origin/QuerySerialization      d4b431b Most Queries work - not with embedded queryables
+  remotes/origin/RepositoryRewrite       af138a2 Majority of Repository (/new DataStore etc) rewriting done (hopefully). First run time error to resolve is DataStoreMongo.Execute(282) Expression not enumerable: Artefacts_Artefact.Count(). Just need to reason through a few of these I expect/hope
+  remotes/origin/RethinkToRESTCompliance a098a65 Simple Implementation of ArtefactRepositoryProxy
+  remotes/origin/RewrittenQueriesBroken  3200a4a Aspect queries - broken ??
+  remotes/origin/TestSmallRefinements    9a15058 Fixed up exception formatting, tried(failed) to use Json in GetQueryRequest instead of Xml
+  remotes/origin/Win7_Test               8643cc8 Just testing GIT time stamps to see if there are set to UTC (ie 8 hrs behind my clock)
+  remotes/origin/master                  ed5005d Use standard REST standards
+  remotes/origin/origin/HEAD             b0200c6 Basic Artefact w/ Host, using Disk aspect can be serialized across client/service and persisted into mongo
+error: some refs could not be read
+jk@UB-D64:~/Code/Projects/NET/Artefacts$ 
+
+

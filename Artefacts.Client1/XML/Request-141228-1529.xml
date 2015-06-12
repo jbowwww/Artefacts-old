@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HttpWebRequest xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/System.Net">
+	<StoredConnection i:nil="true" />
+	<WebConnection i:nil="true" />
+	<_x003C_ReuseConnection_x003E_k__BackingField>false</_x003C_ReuseConnection_x003E_k__BackingField>
+	<_x003C_ThrowOnError_x003E_k__BackingField>true</_x003C_ThrowOnError_x003E_k__BackingField>
+	<abortHandler xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+	<aborted>0</aborted>
+	<actualUri>http://localhost:8888/Artefacts/xml/reply/ArtefactAddRequest</actualUri>
+	<actualVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+	<allowAutoRedirect>true</allowAutoRedirect>
+	<allowBuffering>true</allowBuffering>
+	<asyncRead i:nil="true" />
+	<asyncWrite i:nil="true" />
+	<authCompleted>false</authCompleted>
+	<authentication_level xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Net.Security">MutualAuthRequested</authentication_level>
+	<auto_decomp>None GZip Deflate</auto_decomp>
+	<bodyBuffer i:nil="true" />
+	<bodyBufferLength>0</bodyBufferLength>
+	<certificates xmlns:d2p1="http://schemas.datacontract.org/2004/07/System.Security.Cryptography.X509Certificates" i:nil="true" />
+	<connectionGroup i:nil="true" />
+	<contentLength>-1</contentLength>
+	<continueDelegate i:nil="true" />
+	<cookieContainer>
+		<capacity>300</capacity>
+		<cookies i:nil="true" />
+		<maxCookieSize>4096</maxCookieSize>
+		<perDomainCapacity>20</perDomainCapacity>
+	</cookieContainer>
+	<credentials i:nil="true" />
+	<expectContinue>false</expectContinue>
+	<finished_reading>false</finished_reading>
+	<force_version>false</force_version>
+	<getResponseCalled>false</getResponseCalled>
+	<gotRequestStream>false</gotRequestStream>
+	<haveRequest>false</haveRequest>
+	<haveResponse>false</haveResponse>
+	<host i:nil="true" />
+	<hostChanged>false</hostChanged>
+	<initialMethod>GET</initialMethod>
+	<keepAlive>true</keepAlive>
+	<locker>
+	</locker>
+	<maxAutoRedirect>50</maxAutoRedirect>
+	<maxResponseHeadersLength>2147483647</maxResponseHeadersLength>
+	<mediaType>
+	</mediaType>
+	<method>POST</method>
+	<ntlm_auth_state>None</ntlm_auth_state>
+	<pipelined>true</pipelined>
+	<preAuthenticate>false</preAuthenticate>
+	<proxy>
+		<Credentials i:nil="true" />
+	</proxy>
+	<readWriteTimeout>300000</readWriteTimeout>
+	<redirects>0</redirects>
+	<requestSent>false</requestSent>
+	<requestUri>http://localhost:8888/Artefacts/xml/reply/ArtefactAddRequest</requestUri>
+	<saved_exc xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
+	<sendChunked>false</sendChunked>
+	<servicePoint i:nil="true" />
+	<timeout>100000</timeout>
+	<unsafe_auth_blah>false</unsafe_auth_blah>
+	<usedPreAuth>false</usedPreAuth>
+	<version xmlns:d2p1="http://schemas.datacontract.org/2004/07/System">
+		<d2p1:_Build>-1</d2p1:_Build>
+		<d2p1:_Major>1</d2p1:_Major>
+		<d2p1:_Minor>1</d2p1:_Minor>
+		<d2p1:_Revision>-1</d2p1:_Revision>
+	</version>
+	<webHeaders>
+		<cachedAll xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<cachedAllKeys xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<equality_comparer xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<headerConsistency xmlns:d3p1="http://schemas.datacontract.org/2004/07/System">Request</headerConsistency>
+		<headerRestriction xmlns:d3p1="http://schemas.datacontract.org/2004/07/System">Request</headerRestriction>
+		<infoCopy xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Runtime.Serialization" i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<keyscoll i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<m_ItemsArray xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized">
+			<d3p1:anyType i:type="NameObjectCollectionBase._Item">
+				<key>Accept</key>
+				<value>
+					<d3p1:anyType xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string">application/xml</d3p1:anyType>
+				</value>
+			</d3p1:anyType>
+			<d3p1:anyType i:type="NameObjectCollectionBase._Item">
+				<key>User-Agent</key>
+				<value>
+					<d3p1:anyType xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string">ServiceStack .NET Client 4.00</d3p1:anyType>
+				</value>
+			</d3p1:anyType>
+			<d3p1:anyType i:type="NameObjectCollectionBase._Item">
+				<key>Accept-Encoding</key>
+				<value>
+					<d3p1:anyType xmlns:d6p1="http://www.w3.org/2001/XMLSchema" i:type="d6p1:string">gzip,deflate</d3p1:anyType>
+				</value>
+			</d3p1:anyType>
+		</m_ItemsArray>
+		<m_ItemsContainer xmlns:d3p1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized">
+			<d3p1:KeyValueOfanyTypeanyType>
+				<d3p1:Key xmlns:d5p1="http://www.w3.org/2001/XMLSchema" i:type="d5p1:string">User-Agent</d3p1:Key>
+				<d3p1:Value i:type="NameObjectCollectionBase._Item">
+					<key>User-Agent</key>
+					<value>
+						<d3p1:anyType xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:string">ServiceStack .NET Client 4.00</d3p1:anyType>
+					</value>
+				</d3p1:Value>
+			</d3p1:KeyValueOfanyTypeanyType>
+			<d3p1:KeyValueOfanyTypeanyType>
+				<d3p1:Key xmlns:d5p1="http://www.w3.org/2001/XMLSchema" i:type="d5p1:string">Accept-Encoding</d3p1:Key>
+				<d3p1:Value i:type="NameObjectCollectionBase._Item">
+					<key>Accept-Encoding</key>
+					<value>
+						<d3p1:anyType xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:string">gzip,deflate</d3p1:anyType>
+					</value>
+				</d3p1:Value>
+			</d3p1:KeyValueOfanyTypeanyType>
+			<d3p1:KeyValueOfanyTypeanyType>
+				<d3p1:Key xmlns:d5p1="http://www.w3.org/2001/XMLSchema" i:type="d5p1:string">Accept</d3p1:Key>
+				<d3p1:Value i:type="NameObjectCollectionBase._Item">
+					<key>Accept</key>
+					<value>
+						<d3p1:anyType xmlns:d7p1="http://www.w3.org/2001/XMLSchema" i:type="d7p1:string">application/xml</d3p1:anyType>
+					</value>
+				</d3p1:Value>
+			</d3p1:KeyValueOfanyTypeanyType>
+		</m_ItemsContainer>
+		<m_NullKeyItem i:nil="true" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<m_comparer xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<m_defCapacity xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized">0</m_defCapacity>
+		<m_hashprovider xmlns:d3p1="http://schemas.datacontract.org/2004/07/System.Collections" xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized" />
+		<m_readonly xmlns="http://schemas.datacontract.org/2004/07/System.Collections.Specialized">false</m_readonly>
+	</webHeaders>
+	<webResponse i:nil="true" />
+	<writeStream i:nil="true" />
+</HttpWebRequest>

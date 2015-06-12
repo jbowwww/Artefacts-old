@@ -1,0 +1,22 @@
+21/11/2014 20:29
+
+Task: Implement artefacts in ArtefactsFileSystem plugin project
+
+Start: 2030
+Finish: 1030
+Goal:
+	Make basic FileSystem artefact client that contacts a server on localhost
+	Attempt test run on Debby (start small test set, try all / some while no changes to FS 
+Done:
+ 	Fixed ArtefactsService.Post<ArtefactAddRequest> to use monogo's save instead of insert'
+ 	
+ 	
+Start: 0310
+Finish: 
+Goal:
+	FS artefact client needs to produce Drive, Directory artefacts and serialize over service
+Done:
+
+Current State (0215 20/11/2014)
+- First insert into MongoDB via service works
+- dupe id exception after that - look into ID semantics for Artefact typeS
