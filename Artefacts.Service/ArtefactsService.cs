@@ -105,12 +105,13 @@ namespace Artefacts
 			Log.DebugVariable("query.Expression", query.Expression);
 			object result = DataStore.Execute(query.Expression);
 			Log.DebugVariable("result", result);
-			if (typeof(IEnumerable<Artefact>).IsAssignableFrom(result.GetType()))
+			if (result == null)
+				resultFixed = result;
+			else if (typeof(IEnumerable<Artefact>).IsAssignableFrom(result.GetType()))
 				resultFixed = new QueryableResponse(query.Expression.Id(), ((IEnumerable<Artefact>)result).Select<Artefact, ObjectId>((a) => a.Id).ToArray());
 			else if (typeof(IEnumerable<Aspect>).IsAssignableFrom(result.GetType()))
 				resultFixed = new QueryableResponse(query.Expression.Id(), ((IEnumerable<Aspect>)result).Select<Aspect, ObjectId>((a) => a.Id).ToArray());
-			else
-				resultFixed = result;
+
 			if (resultFixed != result)
 				Log.DebugVariable("resultFixed", resultFixed);
 //			}

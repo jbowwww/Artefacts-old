@@ -214,7 +214,8 @@ namespace Artefacts
 		{
 			return (
 				(member.MemberType == MemberTypes.Field || member.MemberType == MemberTypes.Property) &&
-				!member.Name.StartsWith("get_") && !member.Name.StartsWith("set_") && !member.Name.EndsWith(">k__BackingField") &&
+				!member.Name.StartsWith("get_") && !member.Name.StartsWith("set_") &&
+				!member.Name.Equals("Item") && !member.Name.EndsWith(">k__BackingField") &&
 						member.DeclaringType != typeof(Aspect) &&
 						(member.GetCustomAttribute<BsonIgnoreAttribute>() == null) &&
 						(member.GetCustomAttribute<BsonIgnoreAttribute>() == null));

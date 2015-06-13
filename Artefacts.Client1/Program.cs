@@ -1,10 +1,7 @@
 using System;
 using ServiceStack;
-using ServiceStack.Text.Json;
-using ServiceStack.Web;
 using NUnit.Core;
 using System.Linq;
-using System.Diagnostics;
 using System.Reflection;
 using ServiceStack.Logging;
 using NUnit.Framework;
