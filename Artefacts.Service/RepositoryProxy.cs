@@ -47,11 +47,11 @@ namespace Artefacts
 		/// <returns>The query.</returns>
 		public override IQueryable GetQuery(Expression expression)
 		{	
-			Type repositoryType = typeof(IRepository).IsAssignableFrom(expression.Type) ? expression.Type : null;
+//			Type repositoryType = typeof(IRepository).IsAssignableFrom(expression.Type) ? expression.Type : null;
 			Type elementType = expression.GetElementType();
 			Type queryableType = typeof(Queryable<>).MakeGenericType(elementType);
 			ConstructorInfo ci = queryableType.GetConstructor(new Type[] {
-				/*repositoryType ?? */typeof(IRepository<>).MakeGenericType(elementType),		//typeof(T)),
+				typeof(IRepository<>).MakeGenericType(elementType),		/*repositoryType ?? typeof(T)),*/
 				typeof(Expression) });
 			object queryable = ci.Invoke(new object[] { DataStore.GetRepository(elementType), expression });
 			return (IQueryable)queryable;
