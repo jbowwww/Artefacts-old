@@ -6,6 +6,8 @@ using ServiceStack.Logging;
 using MongoDB.Bson.Serialization.Attributes;
 using MongoDB.Bson;
 using System.Collections;
+using System.Dynamic;
+using System.Reflection;
 
 namespace Artefacts
 {
@@ -21,8 +23,10 @@ namespace Artefacts
 	/// [DataMember]: EmitDefaultValue is ignored, I think.
                	/// </remarks>
 	[DataContract(IsReference = true, Namespace = "Artefacts")]
-	public class Artefact : IDataRelation<Artefact, Aspect>
+	public class Artefact : DynamicObject
 	{	
+		BsonDocument _bsonDocument = new BsonDocument();
+
 		#region Static members
 		/// <summary>
 		/// The log.
@@ -289,6 +293,12 @@ namespace Artefacts
 		public DateTime TimeModified { get; set; }
 
 		/// <summary>
+		/// The fields.
+		/// </summary>
+		[BsonRequired, DataMember]
+		public readonly Dictionary<string, object> Fields;
+
+		/// <summary>
 		/// Aspects collection. See type <see cref="Artefacts.Artefact.AspectCollection"/> 
 		/// </summary>
 		[BsonRequired, DataMember]
@@ -314,8 +324,27 @@ namespace Artefacts
 		/// </remarks>
 		private Artefact()
 		{
+			Fields = new Dictionary<string, object>();
 			Aspects = new AspectCollection(this);
 			Log.Debug(this);
+		}
+
+		public Artefact(object value)
+		{
+			if (value == null)
+				throw new ArgumentNullException("value");
+			if (!value.GetType().IsClass)
+				throw new ArgumentOutOfRangeException("value", "Not a class type");
+			BindingFlags bf = BindingFlags.Public | BindingFlags.Instance
+				| BindingFlags.GetField | BindingFlags.GetProperty;
+			foreach (MemberInfo member in value.GetType().GetMembers(bf))
+			{
+				// This isn't the right way to do it because if value is another
+				// class instance it should create another Artefact
+//				Fields[member.Name] = member.GetPropertyOrField(value);
+				// this should work automatically though?
+				_bsonDocument[member.Name] = BsonValue.Create(value);
+			}
 		}
 
 		/// <summary>
@@ -329,30 +358,63 @@ namespace Artefacts
 			TimeChecked = TimeModified = TimeCreated;
 			URI = uri;
 			Host = Host.Current;
+			Fields = new Dictionary<string, object>();
 			Aspects = new AspectCollection(this, aspects);
 			Log.Debug(this);
 		}
 		#endregion
 
 		#region Methods
-		/// <summary>
-		/// Raises the parent created event.
-		/// </summary>
-		/// <param name="relatedRepository">Related repository.</param>
-		/// <param name="dataStore">Data store.</param>
-		/// <param name="parentRepository">Parent repository.</param>
-		/// <remarks>IDataRelation implementation</remarks>
-		public void OnInserted(IDataStore dataStore)
+
+		public override IEnumerable<string> GetDynamicMemberNames()
 		{
-			if (Aspects == null)
-				Log.ThrowError(new ApplicationException("Artefact.Aspects == null"));
-			foreach (Aspect aspect in Aspects)
-			{
-				Log.DebugVariable("aspect", aspect);
-				IRepository repository = dataStore.GetRepository(aspect.Type);
-				Log.DebugVariable("repository", repository);
-				repository.Create(aspect.AsBsonDocument());
-			}
+			return _bsonDocument.Names;//`.Keys.AsEnumerable();
+		}
+
+		public override bool TryGetMember(GetMemberBinder binder, out object result)
+		{
+//			result = null;
+//			if (!Fields.ContainsKey(binder.Name))
+//				return false;
+//			result = Fields[binder.Name];
+			result = BsonTypeMapper.MapToDotNetValue(_bsonDocument[binder.Name]);
+			return true;
+		}
+
+		/// <summary>
+		/// Tries the set member.
+		/// </summary>
+		/// <returns><c>true</c>, if set member was tryed, <c>false</c> otherwise.</returns>
+		/// <param name="binder">Binder.</param>
+		/// <param name="value">Value.</param>
+		/// <remarks>
+		/// Would this be the right spot to track/create (am i creating?) an object graph
+		/// ie you would (if value is a non-primitive class type) create a new Artefact
+		/// in this method 
+		/// </remarks>
+		public override bool TrySetMember(SetMemberBinder binder, object value)
+		{
+//			Fields[binder.Name] = value != null && value.GetType().IsClass
+//				? new Artefact(value) : value;
+			_bsonDocument[binder.Name] = BsonValue.Create(value);
+			return true;
+		}
+
+		/// <summary>
+		/// Tries the create instance.
+		/// </summary>
+		/// <returns><c>true</c>, if create instance was tryed, <c>false</c> otherwise.</returns>
+		/// <param name="binder">Binder.</param>
+		/// <param name="args">Arguments.</param>
+		/// <param name="result">Result.</param>
+		/// <remarks>
+		/// Is this where I could put a call to storage->add(object) instead of storage->update/save()
+		/// because this method called when a new Artefact is created?
+		/// 		ie a = new Artefact(typed value client side)
+		/// </remarks>
+		public override bool TryCreateInstance(CreateInstanceBinder binder, object[] args, out object result)
+		{
+			return base.TryCreateInstance(binder, args, out result);
 		}
 
 		/// <summary>

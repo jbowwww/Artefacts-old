@@ -41,12 +41,26 @@ namespace Artefacts
 			return false;
 		}
 
-
+		/// <summary>
+		/// Gets the type of the member return.
+		/// </summary>
+		/// <returns>The member return type.</returns>
+		/// <param name="member">Member.</param>
 		public static Type GetMemberReturnType(this MemberInfo member)
 		{
 			return member.MemberType == MemberTypes.Field ? ((FieldInfo)member).FieldType
 				: member.MemberType == MemberTypes.Property ? ((PropertyInfo)member).PropertyType
 					: member.MemberType == MemberTypes.Method ? ((MethodInfo)member).ReturnType : null;
+		}
+
+
+		public static object GetPropertyOrField(this MemberInfo member, object instance)
+		{
+			if (member.MemberType == MemberTypes.Field)
+				return ((FieldInfo)member).GetValue(instance);
+			if (member.MemberType == MemberTypes.Property)
+				return ((PropertyInfo)member).GetValue(instance);
+			throw new ArgumentOutOfRangeException("member", "MemberType == " + member.MemberType.ToString());
 		}
 	}
 }
